@@ -1,8 +1,11 @@
+$green: #32a49b;
+$gray: #777;
+
 .container {
 
   width: 100%;
-
-  font-family: "PT Sans";
+  font-family: "PT Sans Caption";
+  transition: all 0.4s ease-in-out;
 
   header {
     background: url('../img/fondo-recitales.jpg') top center no-repeat transparent;
@@ -15,12 +18,13 @@
     .top {
       display: flex;
       height: 75px;
+
+      border-bottom: .5px solid $gray;
+      background: rgba(0,0,0,0.35);
+
       .logo, nav, .contacto {
         display: inline-block;
       }
-
-      border-bottom: .5px solid gray;
-      background: rgba(0,0,0,0.5);
 
       .top-wrapper {
 
@@ -58,7 +62,6 @@
               float:left;
               padding: 12px; //adjust
               a {
-                heigh: 75px;
                 color: white;
                 text-decoration: none;
                 font-size: 16px;
@@ -72,24 +75,28 @@
 
               .dropdown-content {
                   display: none;
-                  color: gray;
+                  color: $gray;
                   position: absolute;
                   margin-top: 27px;
+                  margin-left: -12px;
                   background-color: #f9f9f9;
                   min-width: 160px;
-                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  border-radius: 0 0 5px 5px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
                   a {
-                    color: gray;
-                    padding: 12px 16px;
+                    color: $gray;
+                    padding: 10px 16px;
                     text-decoration: none;
                     display: block;
+                    &:hover { background: rgba(0,0,0,0.05); }
                   }
-                  a:hover { background-color: #f1f1f1 }
               }
-
-
-
+              &:hover {
+                height: 33px;
+                border-bottom: 4px solid $green;
+              }
             }
+            &:hover { margin-top: 15px; }
           }
         }
 
@@ -110,13 +117,14 @@
        */
       .search {
 
-        padding-top: 100px;
+        padding-top: 120px;
 
         margin: 0 auto;
         text-align: center;
 
         h2 {
           font-size: 46px;
+          line-height: 0;
         }
 
         h3 {
@@ -129,6 +137,7 @@
             height: 50px;
 
             margin-right: -5px;
+            padding-left: 20px;
 
             color: black;
 
@@ -136,10 +145,10 @@
             border: 0;
 
             box-sizing: border-box;
-          }
-          input:focus {
 
+            &:focus { border: 0; }
           }
+
           button {
             width: 15%;
             height: 50px;
@@ -147,7 +156,7 @@
             border-radius: 0 30px 30px 0;
             border: 0;
 
-            background-color: #32a49b;
+            background-color: $green;
 
             vertical-align: top;
 
@@ -158,42 +167,57 @@
           width: 100%;
           text-align: left;
           font-size: 16px;
+          margin-left: -7%;
         }
       }
     }
   }
-}
 
-footer {
-  width: 100%;
-  color: gray;
-  text-align: center;
-
-  .wrapper-footer {
-    width: 1024px;
-    height: 75px;
-    margin: 0 auto;
-    ul {
-      li {
-        heigh: 150px; // adjust
-        padding: 10px; //adjust
-
-        float: left;
-        display: block;
-        a {
-          color: gray;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  hr { clear: both; }
-  p {
-    clear: both;
+  footer {
     width: 100%;
+    color: $gray;
+    text-align: center;
+
+    .wrapper-footer {
+      width: 1024px;
+      height: 75px;
+      margin: 0 auto;
+      ul {
+        margin-top: 45px;
+        li {
+          padding: 10px; //adjust
+
+          float: left;
+          display: block;
+
+          a {
+            color: $gray;
+            text-decoration: none;
+            &:hover { color: $green; }
+          }
+
+        }
+      }
+    }
+    hr { clear: both; }
+    p {
+      clear: both;
+      width: 100%;
+    }
   }
+
 }
 
+.button-menu {
+  font-size: 16px;
+  min-width: 165px;
+  color: $green;
+  border-radius: 20px;
+  border: 0.5px solid $green;
+  background-color: transparent;
+  margin: 0 10px 10px;
+  padding: 5px;
+}
 
 
 //**//

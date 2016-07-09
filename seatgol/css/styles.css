@@ -1,6 +1,7 @@
 .container {
   width: 100%;
-  font-family: "PT Sans"; }
+  font-family: "PT Sans Caption";
+  transition: all 0.4s ease-in-out; }
   .container header {
     background: url("../img/fondo-recitales.jpg") top center no-repeat transparent;
     color: white;
@@ -11,8 +12,8 @@
     .container header .top {
       display: flex;
       height: 75px;
-      border-bottom: .5px solid gray;
-      background: rgba(0, 0, 0, 0.5); }
+      border-bottom: 0.5px solid #777;
+      background: rgba(0, 0, 0, 0.35); }
       .container header .top .logo, .container header .top nav, .container header .top .contacto {
         display: inline-block; }
       .container header .top .top-wrapper {
@@ -43,7 +44,6 @@
               float: left;
               padding: 12px; }
               .container header .top .top-wrapper nav ul li a {
-                heigh: 75px;
                 color: white;
                 text-decoration: none;
                 font-size: 16px; }
@@ -54,19 +54,26 @@
                   display: block; }
               .container header .top .top-wrapper nav ul li .dropdown-content {
                 display: none;
-                color: gray;
+                color: #777;
                 position: absolute;
                 margin-top: 27px;
+                margin-left: -12px;
                 background-color: #f9f9f9;
                 min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+                border-radius: 0 0 5px 5px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3); }
                 .container header .top .top-wrapper nav ul li .dropdown-content a {
-                  color: gray;
-                  padding: 12px 16px;
+                  color: #777;
+                  padding: 10px 16px;
                   text-decoration: none;
                   display: block; }
-                .container header .top .top-wrapper nav ul li .dropdown-content a:hover {
-                  background-color: #f1f1f1; }
+                  .container header .top .top-wrapper nav ul li .dropdown-content a:hover {
+                    background: rgba(0, 0, 0, 0.05); }
+              .container header .top .top-wrapper nav ul li:hover {
+                height: 33px;
+                border-bottom: 4px solid #32a49b; }
+            .container header .top .top-wrapper nav ul:hover {
+              margin-top: 15px; }
         .container header .top .top-wrapper .contacto {
           float: right; }
     .container header .header-wrapper {
@@ -76,21 +83,25 @@
        * Search
        */ }
       .container header .header-wrapper .search {
-        padding-top: 100px;
+        padding-top: 120px;
         margin: 0 auto;
         text-align: center; }
         .container header .header-wrapper .search h2 {
-          font-size: 46px; }
+          font-size: 46px;
+          line-height: 0; }
         .container header .header-wrapper .search h3 {
           font-size: 30px; }
         .container header .header-wrapper .search form input {
           width: 35%;
           height: 50px;
           margin-right: -5px;
+          padding-left: 20px;
           color: black;
           border-radius: 30px 0 0 30px;
           border: 0;
           box-sizing: border-box; }
+          .container header .header-wrapper .search form input:focus {
+            border: 0; }
         .container header .header-wrapper .search form button {
           width: 15%;
           height: 50px;
@@ -102,29 +113,42 @@
         .container header .header-wrapper .search span {
           width: 100%;
           text-align: left;
-          font-size: 16px; }
+          font-size: 16px;
+          margin-left: -7%; }
+  .container footer {
+    width: 100%;
+    color: #777;
+    text-align: center; }
+    .container footer .wrapper-footer {
+      width: 1024px;
+      height: 75px;
+      margin: 0 auto; }
+      .container footer .wrapper-footer ul {
+        margin-top: 45px; }
+        .container footer .wrapper-footer ul li {
+          padding: 10px;
+          float: left;
+          display: block; }
+          .container footer .wrapper-footer ul li a {
+            color: #777;
+            text-decoration: none; }
+            .container footer .wrapper-footer ul li a:hover {
+              color: #32a49b; }
+    .container footer hr {
+      clear: both; }
+    .container footer p {
+      clear: both;
+      width: 100%; }
 
-footer {
-  width: 100%;
-  color: gray;
-  text-align: center; }
-  footer .wrapper-footer {
-    width: 1024px;
-    height: 75px;
-    margin: 0 auto; }
-    footer .wrapper-footer ul li {
-      heigh: 150px;
-      padding: 10px;
-      float: left;
-      display: block; }
-      footer .wrapper-footer ul li a {
-        color: gray;
-        text-decoration: none; }
-  footer hr {
-    clear: both; }
-  footer p {
-    clear: both;
-    width: 100%; }
+.button-menu {
+  font-size: 16px;
+  min-width: 165px;
+  color: #32a49b;
+  border-radius: 20px;
+  border: 0.5px solid #32a49b;
+  background-color: transparent;
+  margin: 0 10px 10px;
+  padding: 5px; }
 
 .dropdown:hover .dropbtn {
   /* background-color: #3e8e41; */ }
