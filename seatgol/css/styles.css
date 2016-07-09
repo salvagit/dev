@@ -2,56 +2,63 @@
   width: 100%;
   font-family: "PT Sans"; }
   .container header {
-    background: url("../img/fondo-recitales.jpg");
+    background: url("../img/fondo-recitales.jpg") top center no-repeat transparent;
     color: white;
     height: 568px; }
-    .container header .logo, .container header nav, .container header .contacto {
-      display: inline-block; }
-    .container header .top {
-      border-bottom: .5px solid gray;
-      background: rgba(0, 0, 0, 0.5); }
-      .container header .top .logo {
-        width: 200px;
-        vertical-align: top; }
-      .container header .top nav ul {
-        width: auto; }
-        .container header .top nav ul li {
-          display: block;
-          float: left;
-          heigh: 150px;
-          padding: 5px; }
-          .container header .top nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px; }
-      .container header .top .contacto {
-        float: right; }
-    .container header .search {
-      padding-top: 100px;
+    .container header .header-wrapper {
+      width: 1024px;
       margin: 0 auto;
-      text-align: center; }
-      .container header .search h2 {
-        font-size: 46px; }
-      .container header .search h3 {
-        font-size: 30px; }
-      .container header .search form input {
-        width: 35%;
-        height: 50px;
-        margin-right: -5px;
-        color: black;
-        border-radius: 30px 0 0 30px;
-        border: 0; }
-      .container header .search form button {
-        width: 15%;
-        height: 52px;
-        border-radius: 0 30px 30px 0;
-        border: 0;
-        background-color: #32a49b;
-        vertical-align: top; }
-      .container header .search span {
-        width: 100%;
-        text-align: left;
-        font-size: 16px; }
+      /**
+      * Search
+      */ }
+      .container header .header-wrapper .logo, .container header .header-wrapper nav, .container header .header-wrapper .contacto {
+        display: inline-block; }
+      .container header .header-wrapper .top {
+        border-bottom: .5px solid gray;
+        background: rgba(0, 0, 0, 0.5); }
+        .container header .header-wrapper .top .logo {
+          width: 200px;
+          vertical-align: top; }
+        .container header .header-wrapper .top nav ul {
+          width: auto; }
+          .container header .header-wrapper .top nav ul li {
+            display: block;
+            float: left;
+            heigh: 150px;
+            padding: 5px; }
+            .container header .header-wrapper .top nav ul li a {
+              color: white;
+              text-decoration: none;
+              font-size: 16px; }
+        .container header .header-wrapper .top .contacto {
+          float: right; }
+      .container header .header-wrapper .search {
+        padding-top: 100px;
+        margin: 0 auto;
+        text-align: center; }
+        .container header .header-wrapper .search h2 {
+          font-size: 46px; }
+        .container header .header-wrapper .search h3 {
+          font-size: 30px; }
+        .container header .header-wrapper .search form input {
+          width: 35%;
+          height: 50px;
+          margin-right: -5px;
+          color: black;
+          border-radius: 30px 0 0 30px;
+          border: 0;
+          box-sizing: border-box; }
+        .container header .header-wrapper .search form button {
+          width: 15%;
+          height: 52px;
+          border-radius: 0 30px 30px 0;
+          border: 0;
+          background-color: #32a49b;
+          vertical-align: top; }
+        .container header .header-wrapper .search span {
+          width: 100%;
+          text-align: left;
+          font-size: 16px; }
 
 footer {
   text-align: center;

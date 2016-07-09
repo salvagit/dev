@@ -5,91 +5,104 @@
   font-family: "PT Sans";
 
   header {
-    background: url('../img/fondo-recitales.jpg');
+    background: url('../img/fondo-recitales.jpg') top center no-repeat transparent;
     color: white;
     height: 568px;
 
     // padding: 0 50px;
 
-    .logo, nav, .contacto {
-      display: inline-block;
-    }
+    .header-wrapper {
 
-    .top {
-      border-bottom: .5px solid gray;
-      background: rgba(0,0,0,0.5);
-
-      .logo {
-        width: 200px;
-        vertical-align: top;
-      }
-
-      nav {
-        ul {
-          width: auto; // adjust
-          li {
-            a {
-              color: white;
-              text-decoration: none;
-              font-size: 16px;
-            }
-            display:block;
-            float:left;
-            heigh:150px; // adjust
-            padding: 5px; //adjust
-          }
-        }
-      }
-
-      .contacto {
-        float: right;
-      }
-
-    }
-
-    .search {
-
-      padding-top: 100px;
-
+      width: 1024px;
       margin: 0 auto;
-      text-align: center;
 
-
-      h2 {
-        font-size: 46px;
-      }
-      h3 {
-        font-size:  30px;
+      .logo, nav, .contacto {
+        display: inline-block;
       }
 
-      form {
-        input {
-          width: 35%;
-          height: 50px;
+      .top {
+        border-bottom: .5px solid gray;
+        background: rgba(0,0,0,0.5);
 
-          margin-right: -5px;
-
-          color: black;
-
-          border-radius: 30px 0 0 30px;
-          border: 0;
-        }
-        button {
-          width: 15%;
-          height: 52px;
-
-          border-radius: 0 30px 30px 0;
-          border: 0;
-
-          background-color: #32a49b;
-
+        .logo {
+          width: 200px;
           vertical-align: top;
         }
+
+        nav {
+          ul {
+            width: auto; // adjust
+            li {
+              a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+              }
+              display:block;
+              float:left;
+              heigh:150px; // adjust
+              padding: 5px; //adjust
+            }
+          }
+        }
+
+        .contacto {
+          float: right;
+        }
       }
-      span {
-        width: 100%;
-        text-align: left;
-        font-size: 16px;
+      
+      /**
+      * Search
+      */
+      .search {
+
+        padding-top: 100px;
+
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+          font-size: 46px;
+        }
+
+        h3 {
+          font-size:  30px;
+        }
+
+        form {
+          input {
+            width: 35%;
+            height: 50px;
+
+            margin-right: -5px;
+
+            color: black;
+
+            border-radius: 30px 0 0 30px;
+            border: 0;
+
+            box-sizing: border-box;
+          }
+          input:focus {
+
+          }
+          button {
+            width: 15%;
+            height: 52px;
+
+            border-radius: 0 30px 30px 0;
+            border: 0;
+
+            background-color: #32a49b;
+
+            vertical-align: top;
+          }
+        }
+        span {
+          width: 100%;
+          text-align: left;
+          font-size: 16px;
+        }
       }
     }
 
