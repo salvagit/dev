@@ -9,39 +9,51 @@
     color: white;
     height: 568px;
 
-    // padding: 0 50px;
-
-    .header-wrapper {
-
-      width: 1024px;
-      margin: 0 auto;
-
+    /**
+     * Top.
+     */
+    .top {
+      display: flex;
+      height: 75px;
       .logo, nav, .contacto {
         display: inline-block;
       }
 
-      .top {
-        border-bottom: .5px solid gray;
-        background: rgba(0,0,0,0.5);
+      border-bottom: .5px solid gray;
+      background: rgba(0,0,0,0.5);
+
+      .top-wrapper {
+
+        display: flex;
+
+        align-items: center;
+
+        width: 1024px;
+        margin: 0 auto;
+
+        ul {
+          margin: 0;
+        }
 
         .logo {
-          width: 200px;
-          vertical-align: top;
+          min-width: 180px;
+          margin-top: -5px;
         }
 
         nav {
+          flex-grow: 2;
           ul {
             width: auto; // adjust
             li {
+              display:block;
+              float:left;
+              padding: 5px; //adjust
               a {
+                heigh: 75px;
                 color: white;
                 text-decoration: none;
                 font-size: 16px;
               }
-              display:block;
-              float:left;
-              heigh:150px; // adjust
-              padding: 5px; //adjust
             }
           }
         }
@@ -50,10 +62,17 @@
           float: right;
         }
       }
-      
+
+    }
+
+    .header-wrapper {
+
+      width: 1024px;
+      margin: 0 auto;
+
       /**
-      * Search
-      */
+       * Search
+       */
       .search {
 
         padding-top: 100px;
@@ -88,7 +107,7 @@
           }
           button {
             width: 15%;
-            height: 52px;
+            height: 50px;
 
             border-radius: 0 30px 30px 0;
             border: 0;
@@ -96,6 +115,8 @@
             background-color: #32a49b;
 
             vertical-align: top;
+
+            box-sizing: border-box;
           }
         }
         span {
@@ -105,29 +126,33 @@
         }
       }
     }
-
   }
-
 }
 
 footer {
-  text-align: center;
+  width: 100%;
   color: gray;
-  ul {
-    li {
-      a {
-        color: gray;
-        text-decoration: none;
+  text-align: center;
+
+  .wrapper-footer {
+    width: 1024px;
+    height: 75px;
+    margin: 0 auto;
+    ul {
+      li {
+        heigh: 150px; // adjust
+        padding: 10px; //adjust
+
+        float: left;
+        display: block;
+        a {
+          color: gray;
+          text-decoration: none;
+        }
       }
-      display: block;
-      float: left;
-      heigh:150px; // adjust
-      padding: 5px; //adjust
     }
   }
-  hr {
-    clear: both;
-  }
+  hr { clear: both; }
   p {
     clear: both;
     width: 100%;

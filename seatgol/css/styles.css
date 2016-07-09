@@ -4,34 +4,48 @@
   .container header {
     background: url("../img/fondo-recitales.jpg") top center no-repeat transparent;
     color: white;
-    height: 568px; }
+    height: 568px;
+    /**
+     * Top.
+     */ }
+    .container header .top {
+      display: flex;
+      height: 75px;
+      border-bottom: .5px solid gray;
+      background: rgba(0, 0, 0, 0.5); }
+      .container header .top .logo, .container header .top nav, .container header .top .contacto {
+        display: inline-block; }
+      .container header .top .top-wrapper {
+        display: flex;
+        align-items: center;
+        width: 1024px;
+        margin: 0 auto; }
+        .container header .top .top-wrapper ul {
+          margin: 0; }
+        .container header .top .top-wrapper .logo {
+          min-width: 180px;
+          margin-top: -5px; }
+        .container header .top .top-wrapper nav {
+          flex-grow: 2; }
+          .container header .top .top-wrapper nav ul {
+            width: auto; }
+            .container header .top .top-wrapper nav ul li {
+              display: block;
+              float: left;
+              padding: 5px; }
+              .container header .top .top-wrapper nav ul li a {
+                heigh: 75px;
+                color: white;
+                text-decoration: none;
+                font-size: 16px; }
+        .container header .top .top-wrapper .contacto {
+          float: right; }
     .container header .header-wrapper {
       width: 1024px;
       margin: 0 auto;
       /**
-      * Search
-      */ }
-      .container header .header-wrapper .logo, .container header .header-wrapper nav, .container header .header-wrapper .contacto {
-        display: inline-block; }
-      .container header .header-wrapper .top {
-        border-bottom: .5px solid gray;
-        background: rgba(0, 0, 0, 0.5); }
-        .container header .header-wrapper .top .logo {
-          width: 200px;
-          vertical-align: top; }
-        .container header .header-wrapper .top nav ul {
-          width: auto; }
-          .container header .header-wrapper .top nav ul li {
-            display: block;
-            float: left;
-            heigh: 150px;
-            padding: 5px; }
-            .container header .header-wrapper .top nav ul li a {
-              color: white;
-              text-decoration: none;
-              font-size: 16px; }
-        .container header .header-wrapper .top .contacto {
-          float: right; }
+       * Search
+       */ }
       .container header .header-wrapper .search {
         padding-top: 100px;
         margin: 0 auto;
@@ -50,27 +64,33 @@
           box-sizing: border-box; }
         .container header .header-wrapper .search form button {
           width: 15%;
-          height: 52px;
+          height: 50px;
           border-radius: 0 30px 30px 0;
           border: 0;
           background-color: #32a49b;
-          vertical-align: top; }
+          vertical-align: top;
+          box-sizing: border-box; }
         .container header .header-wrapper .search span {
           width: 100%;
           text-align: left;
           font-size: 16px; }
 
 footer {
-  text-align: center;
-  color: gray; }
-  footer ul li {
-    display: block;
-    float: left;
-    heigh: 150px;
-    padding: 5px; }
-    footer ul li a {
-      color: gray;
-      text-decoration: none; }
+  width: 100%;
+  color: gray;
+  text-align: center; }
+  footer .wrapper-footer {
+    width: 1024px;
+    height: 75px;
+    margin: 0 auto; }
+    footer .wrapper-footer ul li {
+      heigh: 150px;
+      padding: 10px;
+      float: left;
+      display: block; }
+      footer .wrapper-footer ul li a {
+        color: gray;
+        text-decoration: none; }
   footer hr {
     clear: both; }
   footer p {
