@@ -10,7 +10,7 @@
     height: 568px;
 
     /**
-     * Top.
+     * Top
      */
     .top {
       display: flex;
@@ -24,6 +24,12 @@
 
       .top-wrapper {
 
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
         display: flex;
 
         align-items: center;
@@ -40,6 +46,9 @@
           margin-top: -5px;
         }
 
+        /**
+         * Nav
+         */
         nav {
           flex-grow: 2;
           ul {
@@ -47,13 +56,39 @@
             li {
               display:block;
               float:left;
-              padding: 5px; //adjust
+              padding: 12px; //adjust
               a {
                 heigh: 75px;
                 color: white;
                 text-decoration: none;
                 font-size: 16px;
               }
+
+              &.selected {
+                position: relative;
+                display: inline-block;
+                .dropdown-content { display: block; }
+              }
+
+              .dropdown-content {
+                  display: none;
+                  color: gray;
+                  position: absolute;
+                  margin-top: 27px;
+                  background-color: #f9f9f9;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  a {
+                    color: gray;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                  }
+                  a:hover { background-color: #f1f1f1 }
+              }
+
+
+
             }
           }
         }
@@ -158,3 +193,19 @@ footer {
     width: 100%;
   }
 }
+
+
+
+//**//
+
+.dropbtn {
+    // background-color: #4CAF50;
+    // color: white;
+    // padding: 16px;
+    // font-size: 16px;
+    // border: none;
+    // cursor: pointer;
+    // height: 80px;
+}
+
+.dropdown:hover .dropbtn { /* background-color: #3e8e41; */ }

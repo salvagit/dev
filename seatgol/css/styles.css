@@ -6,7 +6,7 @@
     color: white;
     height: 568px;
     /**
-     * Top.
+     * Top
      */ }
     .container header .top {
       display: flex;
@@ -16,10 +16,19 @@
       .container header .top .logo, .container header .top nav, .container header .top .contacto {
         display: inline-block; }
       .container header .top .top-wrapper {
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
         display: flex;
         align-items: center;
         width: 1024px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        /**
+         * Nav
+         */ }
         .container header .top .top-wrapper ul {
           margin: 0; }
         .container header .top .top-wrapper .logo {
@@ -32,12 +41,32 @@
             .container header .top .top-wrapper nav ul li {
               display: block;
               float: left;
-              padding: 5px; }
+              padding: 12px; }
               .container header .top .top-wrapper nav ul li a {
                 heigh: 75px;
                 color: white;
                 text-decoration: none;
                 font-size: 16px; }
+              .container header .top .top-wrapper nav ul li.selected {
+                position: relative;
+                display: inline-block; }
+                .container header .top .top-wrapper nav ul li.selected .dropdown-content {
+                  display: block; }
+              .container header .top .top-wrapper nav ul li .dropdown-content {
+                display: none;
+                color: gray;
+                position: absolute;
+                margin-top: 27px;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+                .container header .top .top-wrapper nav ul li .dropdown-content a {
+                  color: gray;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block; }
+                .container header .top .top-wrapper nav ul li .dropdown-content a:hover {
+                  background-color: #f1f1f1; }
         .container header .top .top-wrapper .contacto {
           float: right; }
     .container header .header-wrapper {
@@ -96,5 +125,8 @@ footer {
   footer p {
     clear: both;
     width: 100%; }
+
+.dropdown:hover .dropbtn {
+  /* background-color: #3e8e41; */ }
 
 /*# sourceMappingURL=styles.css.map */
