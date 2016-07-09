@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  font-family: "PT Sans"; }
+  .container header {
+    background: url("../img/fondo-recitales.jpg");
+    color: white;
+    height: 568px; }
+    .container header .logo, .container header nav, .container header .contacto {
+      display: inline-block; }
+    .container header .top {
+      border-bottom: .5px solid gray;
+      background: rgba(0, 0, 0, 0.5); }
+      .container header .top .logo {
+        width: 200px;
+        vertical-align: top; }
+      .container header .top nav ul {
+        width: auto; }
+        .container header .top nav ul li {
+          font-size: 16px;
+          display: block;
+          float: left;
+          heigh: 150px;
+          padding: 5px; }
+      .container header .top .contacto {
+        float: right; }
+    .container header .search {
+      padding-top: 100px;
+      margin: 0 auto;
+      text-align: center; }
+      .container header .search h2 {
+        font-size: 46px; }
+      .container header .search h3 {
+        font-size: 30px; }
+      .container header .search form input {
+        color: black;
+        width: 35%;
+        height: 50px;
+        border-radius: 30px 0 0 30px;
+        border: 0; }
+      .container header .search form button {
+        height: 54px;
+        width: 15%;
+        border-radius: 0 30px 30px 0;
+        border: 0;
+        background-color: #32a49b; }
+      .container header .search span {
+        width: 100%;
+        text-align: left;
+        font-size: 16px; }
+
+footer {
+  text-align: center; }
+  footer ul li {
+    display: block;
+    float: left;
+    heigh: 150px;
+    padding: 5px; }
+  footer hr {
+    clear: both; }
+  footer p {
+    clear: both;
+    width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */
