@@ -1,7 +1,7 @@
 .container {
   width: 100%;
-  font-family: "PT Sans Caption";
-  transition: all 0.4s ease-in-out; }
+  font-family: 'PT Sans';
+  transition: All 0.4s ease-in-out; }
   .container header {
     background: url("../img/fondo-recitales.jpg") top center no-repeat transparent;
     color: white;
@@ -10,6 +10,10 @@
      * Top
      */ }
     .container header .top {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -moz-flex;
       display: flex;
       height: 75px;
       border-bottom: 0.5px solid #777;
@@ -18,12 +22,15 @@
         display: inline-block; }
       .container header .top .top-wrapper {
         -ms-box-orient: horizontal;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -moz-flex;
         display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -moz-flex;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
         align-items: center;
         width: 1024px;
         margin: 0 auto;
@@ -36,6 +43,10 @@
           min-width: 180px;
           margin-top: -5px; }
         .container header .top .top-wrapper nav {
+          -ms-flex-positive: 2;
+          -webkit-flex-grow: 2;
+          -webkit-box-flex: 2;
+          -moz-flex-grow: 2;
           flex-grow: 2; }
           .container header .top .top-wrapper nav ul {
             width: auto; }
@@ -114,7 +125,7 @@
           width: 100%;
           text-align: left;
           font-size: 16px;
-          margin-left: -7%; }
+          margin-left: -12%; }
   .container footer {
     width: 100%;
     color: #777;

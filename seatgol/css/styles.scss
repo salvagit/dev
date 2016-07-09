@@ -1,11 +1,13 @@
+@import "mixins";
+
 $green: #32a49b;
 $gray: #777;
 
 .container {
 
   width: 100%;
-  font-family: "PT Sans Caption";
-  transition: all 0.4s ease-in-out;
+  font-family: 'PT Sans';
+  transition: All 0.4s ease-in-out;
 
   header {
     background: url('../img/fondo-recitales.jpg') top center no-repeat transparent;
@@ -16,7 +18,7 @@ $gray: #777;
      * Top
      */
     .top {
-      display: flex;
+      @include flexbox;
       height: 75px;
 
       border-bottom: .5px solid $gray;
@@ -29,14 +31,8 @@ $gray: #777;
       .top-wrapper {
 
         -ms-box-orient: horizontal;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -moz-flex;
-        display: -webkit-flex;
-        display: flex;
-
-        align-items: center;
+        @include flexbox;
+        @include align-items(center);
 
         width: 1024px;
         margin: 0 auto;
@@ -54,7 +50,7 @@ $gray: #777;
          * Nav
          */
         nav {
-          flex-grow: 2;
+          @include flex-grow(2);
           ul {
             width: auto; // adjust
             li {
@@ -167,7 +163,7 @@ $gray: #777;
           width: 100%;
           text-align: left;
           font-size: 16px;
-          margin-left: -7%;
+          margin-left: -12%;
         }
       }
     }
