@@ -1,9 +1,13 @@
+@import "mixins";
+@import "colors";
 .container {
   .content {
     .header-box {
         height: 340px;
+        background-position-y: -180px;
         .header-wrapper {
           .search {
+            padding-top: 220px;
             margin: 0;
             text-align: left;
             h2 { font-size: 30px; }
@@ -15,25 +19,61 @@
       width: 100%;
       text-align: center;
       .article {
-          width: 75%;
+          width: 1024px;
           margin: 0 auto;
           h2 {
             text-align: left;
+            color: $gray;
           }
           .item-container {
-            width: 100%;
+            width: 70%;
+            float: left;
             .item {
-              width: 80%;
               height: 100px;
 
-              border: 0.01px solid gray;
+              margin-bottom: -1px;
+              border-bottom: 0;
+
+              border: 0.01px solid rgba(85, 85, 85, 0.18);
 
               padding: 10px;
 
-              p { float: left; }
+              .item-wrapper {
+                width: 95%;
 
-              button { float: right; }
+                padding-top: 20px;
+                margin: 0 auto;
+
+                display: inline-block;
+
+                p {
+                  font-size: 20px;
+                  color: $green;
+                  float: left;
+                }
+
+                button {
+                  width: 200px;
+                  height: 50px;
+
+                  float: right;
+
+                  background-color: $green;
+
+                  border: 0;
+                  @include border-radius(35px);
+
+                  color: white;
+                }
+              }
+
             }
+          }
+          .banner {
+            width: 25%;
+            height: 400px;
+            border: 0.01px solid rgba(85, 85, 85, 0.18);
+            float: right;
           }
       }
     }

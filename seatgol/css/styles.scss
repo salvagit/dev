@@ -1,7 +1,5 @@
 @import "mixins";
-
-$green: #32a49b;
-$gray: #777;
+@import "colors";
 
 .container {
 
@@ -220,6 +218,11 @@ $gray: #777;
 
   footer {
     width: 100%;
+    display: inline-block;
+
+    margin-top: 75px;
+    border-top: 0.1px solid rgba(0,0,0,0.2);
+
     color: $gray;
     text-align: center;
 

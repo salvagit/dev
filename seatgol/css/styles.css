@@ -172,6 +172,9 @@
             margin-left: -35%; }
   .container footer {
     width: 100%;
+    display: inline-block;
+    margin-top: 75px;
+    border-top: 0.1px solid rgba(0, 0, 0, 0.2);
     color: #777;
     text-align: center; }
     .container footer .wrapper-footer {
