@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .container {
   width: 100%;
   font-family: "PT Sans";
@@ -38,7 +37,7 @@
          * Nav
          */ }
         .container header .top .top-wrapper ul {
-           margin: 0; }
+          margin: 0; }
         .container header .top .top-wrapper .logo {
           min-width: 200px;
           margin-top: -12px; }
