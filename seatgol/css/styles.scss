@@ -75,7 +75,7 @@
                   display: none;
                   color: $gray;
                   position: absolute;
-                  margin-top: 27px;
+                  margin-top: 35px;
                   margin-left: -12px;
                   background-color: #f9f9f9;
                   min-width: 160px;
@@ -100,7 +100,7 @@
                   }
               }
               &:hover {
-                height: 35px;
+                height: 41px;
                 border-bottom: 4px solid $green;
               }
               // Triangle
@@ -113,7 +113,7 @@
                 border-top: 4px solid white;
               }
             }
-            &:hover { margin-top: 14px; }
+            &:hover { margin-top: 23px; }
           }
 
         }
