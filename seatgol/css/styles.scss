@@ -7,7 +7,8 @@ $gray: #777;
 
   width: 100%;
 
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
+  font-style: normal;
 
   header {
     background: url('../img/fondo-recitales.jpg') top center no-repeat transparent;
@@ -19,10 +20,10 @@ $gray: #777;
      */
     .top {
       @include flexbox;
-      height: 75px;
+      height: 78px;
 
-      border-bottom: .5px solid $gray;
-      background: rgba(0,0,0,0.35);
+      border-bottom: .5px solid rgba(255,255,255,0.3);
+      background: rgba(0,0,0,0.2);
 
       .logo, nav, .contacto {
         display: inline-block;
@@ -34,26 +35,26 @@ $gray: #777;
         @include flexbox;
         @include align-items(center);
 
-        width: 1024px;
+        // width: 1024px;
+        width: 1135px;
         margin: 0 auto;
 
-        ul {
-          margin: 0;
-        }
+        ul { margin: 0; }
 
         .logo {
-          min-width: 180px;
-          margin-top: -5px;
+          min-width: 200px;
+          margin-top: -12px;
         }
 
         /**
          * Nav
          */
-        nav {
+        .menu {
           @include flex-grow(2);
-          font-weight: lighter;
-          ul {
+          .topNav {
             width: auto; // adjust
+            margin-top: 14px;
+            margin: 0;
             li {
               display:block;
               float:left;
@@ -66,8 +67,8 @@ $gray: #777;
               }
 
               &.selected {
-                position: relative;
-                display: inline-block;
+                // position: relative;
+                // display: inline-block;
                 .dropdown-content { display: block; }
               }
 
@@ -115,8 +116,15 @@ $gray: #777;
             }
             &:hover { margin-top: 14px; }
           }
+          .search-box {
+            display: none;
+          }
+          &.search {
+            .search-box {
+              display: block;
+            }
+          }
         }
-
       }
 
     }
@@ -141,47 +149,43 @@ $gray: #777;
           line-height: 0;
         }
 
-        h3 {
-          font-size:  30px;
-        }
+        h3 { font-size:  30px; }
 
         form {
 
           *:focus { outline: none; }
 
           input, button {
-            height: 50px;
+            height: 70px;
             border: 0;
             box-sizing: border-box;
             vertical-align: middle;
           }
 
           input {
-            width: 35%;
-
+            width: 60%;
             margin-right: -5px;
             padding-left: 20px;
-
             color: $gray;
-
-            @include border-radius(30px 0 0 30px);
+            @include border-radius(35px 0 0 35px);
+            font-size: 23px;
           }
 
           button {
-            width: 12%;
-            @include border-radius(0 30px 30px 0);
+            width: 15%;
+            font-size: 23px;
+            @include border-radius(0 35px 35px 0);
             background-color: $green;
             padding-left: 10px;
             &::before {
               content: '';
               margin: -4px -20px 0 0;
-              width: 25px;
-              height: 25px;
+              width: 35px;
+              height: 35px;
               background-image: url('../img/search.svg');
               float: left;
             }
           }
-
         }
 
         .view-resent {
@@ -189,12 +193,9 @@ $gray: #777;
           height: auto;
           background-color: white;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-
           margin: 10px auto 0;
           padding: 10px 0 10px 50px;
-
           @include border-radius(10px);
-
           text-align: left;
 
           h3 {
@@ -204,16 +205,14 @@ $gray: #777;
             &::before {}
           }
 
-          .item {
-            color: $gray;
-          }
+          .item { color: $gray; }
         }
 
         span {
           width: 100%;
           text-align: left;
           font-size: 16px;
-          margin-left: -12%;
+          margin-left: -35%;
         }
       }
     }
@@ -226,6 +225,7 @@ $gray: #777;
 
     .wrapper-footer {
       width: 1024px;
+      // width: 1135px;
       height: 75px;
       margin: 0 auto;
       ul {
@@ -254,6 +254,8 @@ $gray: #777;
 
 }
 
+.lighter { font-weight: lighter; }
+
 .hidden { display: none; }
 
 .bold { font-weight: bolder; }
@@ -267,4 +269,18 @@ $gray: #777;
   background-color: transparent;
   margin: 0 10px 10px;
   padding: 5px;
+}
+
+
+@media only screen and ( max-width: 780px )  {
+  body {
+    background-color: red;
+  }
+  .container {
+    header {
+      .header-wrapper {
+        width: auto;
+      }
+    }
+  }
 }
