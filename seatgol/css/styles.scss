@@ -6,8 +6,8 @@ $gray: #777;
 .container {
 
   width: 100%;
+
   font-family: 'PT Sans';
-  transition: All 0.4s ease-in-out;
 
   header {
     background: url('../img/fondo-recitales.jpg') top center no-repeat transparent;
@@ -51,6 +51,7 @@ $gray: #777;
          */
         nav {
           @include flex-grow(2);
+          font-weight: lighter;
           ul {
             width: auto; // adjust
             li {
@@ -58,6 +59,7 @@ $gray: #777;
               float:left;
               padding: 12px; //adjust
               a {
+                font-weight: lighter;
                 color: white;
                 text-decoration: none;
                 font-size: 16px;
@@ -77,7 +79,7 @@ $gray: #777;
                   margin-left: -12px;
                   background-color: #f9f9f9;
                   min-width: 160px;
-                  border-radius: 0 0 5px 5px;
+                  @include border-radius(0 0 5px 5px);
                   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
                   a {
                     color: $gray;
@@ -85,20 +87,36 @@ $gray: #777;
                     text-decoration: none;
                     display: block;
                     &:hover { background: rgba(0,0,0,0.05); }
+                    // Triangle
+                    &::after {
+                      content: '';
+                      margin: 9px;
+                      float: right;
+                      border-left: 5px solid transparent;
+                      border-right: 5px solid transparent;
+                      border-top: 5px solid $green;
+                      transform: rotate(270deg);
+                    }
                   }
               }
               &:hover {
                 height: 33px;
                 border-bottom: 4px solid $green;
               }
+              // Triangle
+              &::after {
+                content: '';
+                margin: 9px;
+                float: right;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid white;
+              }
             }
-            &:hover { margin-top: 15px; }
+            &:hover { margin-top: 14px; }
           }
         }
 
-        .contacto {
-          float: right;
-        }
       }
 
     }
@@ -128,37 +146,64 @@ $gray: #777;
         }
 
         form {
+
+          *:focus { outline: none; }
+
+          input, button {
+            height: 50px;
+            border: 0;
+            box-sizing: border-box;
+            vertical-align: middle;
+          }
+
           input {
             width: 35%;
-            height: 50px;
 
             margin-right: -5px;
             padding-left: 20px;
 
-            color: black;
+            color: $gray;
 
-            border-radius: 30px 0 0 30px;
-            border: 0;
-
-            box-sizing: border-box;
-
-            &:focus { border: 0; }
+            @include border-radius(30px 0 0 30px);
           }
 
           button {
             width: 15%;
-            height: 50px;
-
-            border-radius: 0 30px 30px 0;
-            border: 0;
-
+            @include border-radius(0 30px 30px 0);
             background-color: $green;
+          }
 
-            vertical-align: top;
+        }
 
-            box-sizing: border-box;
+        .view-resent {
+          width: 46%;
+          height: auto;
+          background-color: white;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+
+          margin: 10px auto 0;
+          padding: 10px 0 10px 50px;
+
+          @include border-radius(10px);
+
+          text-align: left;
+
+          h3 {
+
+            color: $green;
+            margin: 0;
+            font-size: 20px;
+
+            &::before {
+
+            }
+          }
+
+          .item {
+            color: $gray;
           }
         }
+
         span {
           width: 100%;
           text-align: left;
@@ -179,7 +224,7 @@ $gray: #777;
       height: 75px;
       margin: 0 auto;
       ul {
-        margin-top: 45px;
+        margin: 45px;
         li {
           padding: 10px; //adjust
 
@@ -204,11 +249,15 @@ $gray: #777;
 
 }
 
+.hidden { display: none; }
+
+.bold { font-weight: bolder; }
+
 .button-menu {
   font-size: 16px;
   min-width: 165px;
   color: $green;
-  border-radius: 20px;
+  @include border-radius(20px);
   border: 0.5px solid $green;
   background-color: transparent;
   margin: 0 10px 10px;
