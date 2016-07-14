@@ -1,4 +1,8 @@
 .container {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   width: 100%;
   font-family: "PT Sans";
   font-style: normal; }
@@ -259,12 +263,63 @@
       height: 35px;
       background-image: url("../img/search.svg");
       float: left; }
+    @media only screen and (max-width: 950px) {
+      .search-form button {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden; } }
 
-@media only screen and (max-width: 780px) {
-  body {
-    background-color: red; }
-
-  .container header .header-wrapper {
-    width: auto; } }
+@media only screen and (max-width: 1215px) {
+  .container header .top .top-wrapper {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .container .content .header-box {
+    height: auto;
+    background-size: cover; }
+    .container .content .header-box .header-wrapper {
+      width: auto; }
+      .container .content .header-box .header-wrapper .search {
+        padding-top: 250px;
+        padding-bottom: 50px; }
+        .container .content .header-box .header-wrapper .search h2 {
+          line-height: normal; }
+  .container footer .wrapper-footer {
+    width: 100%; }
+    .container footer .wrapper-footer ul li {
+      padding-bottom: 15px;
+      width: 100%; } }
+@media only screen and (max-width: 850px) {
+  .container header .top {
+    height: auto; }
+    .container header .top .top-wrapper {
+      padding: 0;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .container header .top .top-wrapper .logo {
+        margin: 15px;
+        min-width: 320px; }
+      .container header .top .top-wrapper .menu {
+        width: 100%; }
+        .container header .top .top-wrapper .menu .topNav li {
+          margin-top: 4px;
+          width: 90%;
+          margin: 0;
+          display: table-cell;
+          list-style-type: none;
+          vertical-align: middle; }
+          .container header .top .top-wrapper .menu .topNav li .dropdown-content {
+            margin-top: 16px; }
+          .container header .top .top-wrapper .menu .topNav li:hover {
+            height: auto;
+            border-bottom: 4px solid #32a49b;
+            margin-bottom: -4px; }
+        .container header .top .top-wrapper .menu .topNav:hover {
+          margin-top: 0; }
+  .container .content .header-box .header-wrapper .search {
+    padding-top: 300px; }
+    .container .content .header-box .header-wrapper .search span {
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=styles.css.map */
