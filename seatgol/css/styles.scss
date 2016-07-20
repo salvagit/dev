@@ -517,6 +517,8 @@ $wrapper-size: 1135px;
                   .search-box {
                     max-width: 500px;
                     float: none!important;
+                    border: 0;
+                    box-shadow: none;
                   }
                 }
               }

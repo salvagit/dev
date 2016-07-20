@@ -385,7 +385,9 @@
       color: rgba(255, 255, 255, 0.8); }
     .container header .top .top-wrapper .menu .container-fluid #bs-example-navbar-collapse-1 .search-box {
       max-width: 500px;
-      float: none !important; }
+      float: none !important;
+      border: 0;
+      box-shadow: none; }
   .container .content .header-box {
     height: auto;
     background-size: cover; }
