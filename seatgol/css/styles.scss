@@ -31,7 +31,10 @@ $wrapper-size: 1135px;
       // height: 78px;
 
       border-bottom: 1px solid rgba(94,108,149,1);
-      background: rgba(0,0,0,0.2);
+
+      background-color: rgba(0,0,0,0.2);
+
+      &.blue-background {background-color: #11334f}
 
       .logo, nav, .contacto {
         display: inline-block;
