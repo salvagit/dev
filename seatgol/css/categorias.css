@@ -57,5 +57,18 @@
       height: 400px;
       border: 0.01px solid rgba(85, 85, 85, 0.18);
       float: right; }
+    @media only screen and (max-width: 1135px) {
+      .container .content .section .article {
+        margin: 20px;
+        width: auto; } }
+
+@media only screen and (max-width: 1135px) {
+  .container .content .section .article .item-container {
+    width: 100% !important; }
+    .container .content .section .article .item-container .item {
+      height: auto !important;
+      float: none !important; }
+      .container .content .section .article .item-container .item .item-wrapper p, .container .content .section .article .item-container .item .item-wrapper button {
+        float: none !important; } }
 
 /*# sourceMappingURL=categorias.css.map */
