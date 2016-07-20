@@ -114,7 +114,7 @@ $wrapper-size: 1135px;
                   @include border-radius(0 0 5px 5px);
                   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
                   a {
-                    color: $gray;
+                    color: white;
                     padding: 10px 16px;
                     text-decoration: none;
                     display: block;
@@ -133,8 +133,8 @@ $wrapper-size: 1135px;
               }
 
               &:hover {
-                height: 80px;
-                border-bottom: 4px solid $green;
+                // height: 80px;
+                // border-bottom: 4px solid $green;
               }
               // Triangle
               &::after {
