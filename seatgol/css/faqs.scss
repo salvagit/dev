@@ -1,0 +1,62 @@
+@import "mixins";
+@import "colors";
+
+.container {
+  .content {
+    .section {
+      margin: 160px auto 0;
+      width: 1135px;
+      text-align: center;
+      .article {
+        text-align: left;
+        h1 {
+          font-size: 28px;
+          font-weight: bolder;
+        }
+        .text-block {
+          width: 50%;
+          float: left;
+          height: auto;
+          h2 {
+            font-size: 24px;
+            font-weight: bolder;
+          }
+          p {
+            padding-right: 30px;
+            font-size: 17px;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    .content {
+      .section {
+        width: auto;
+        padding: 0 20px;
+        .article {
+          .text-block {
+            width: 100%;
+            float: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .container {
+    .content {
+      .section {
+        width: auto;
+        padding: 0 20px;
+        .article {}
+      }
+    }
+  }
+}
