@@ -72,19 +72,21 @@
                 color: white;
                 text-decoration: none;
                 font-size: 16px; }
-              .container header .top .top-wrapper .menu .topNav li.selected .dropdown-content {
+              .container header .top .top-wrapper .menu .topNav li .dropdown-content {
                 display: block; }
-              .container header .top .top-wrapper .menu .topNav li.selected ul {
+              .container header .top .top-wrapper .menu .topNav li ul {
                 margin: 5px 0px 0px 20px; }
-                .container header .top .top-wrapper .menu .topNav li.selected ul li a {
+                .container header .top .top-wrapper .menu .topNav li ul li a {
                   color: #777 !important; }
-                .container header .top .top-wrapper .menu .topNav li.selected ul:hover {
+                  @media only screen and (max-width: 1215px) {
+                    .container header .top .top-wrapper .menu .topNav li ul li a {
+                      color: rgba(255, 255, 255, 0.8) !important; } }
+                .container header .top .top-wrapper .menu .topNav li ul:hover {
                   border-bottom: none !important; }
-              .container header .top .top-wrapper .menu .topNav li.selected.open a {
+              .container header .top .top-wrapper .menu .topNav li.open a {
                 background-color: transparent !important; }
               .container header .top .top-wrapper .menu .topNav li .dropdown-content {
                 display: none;
-                color: #777;
                 position: absolute;
                 margin-top: 35px;
                 margin-left: -12px;
@@ -330,7 +332,8 @@
           box-shadow: none;
           border: 0; }
           .container .top .top-wrapper .menu .container-fluid #bs-example-navbar-collapse-1 .topNav li .dropdown-menu li {
-            float: left; }
+            float: left;
+            color: rgba(255, 255, 255, 0.8); }
   .container .top .top-wrapper .menu .container-fluid .collapse {
     display: none !important;
     border-top: 1px solid transparent;
@@ -375,6 +378,11 @@
     padding-top: 10px;
     padding-bottom: 10px; } }
 @media only screen and (max-width: 1215px) {
+  .container header .top .top-wrapper .menu .container-fluid #bs-example-navbar-collapse-1 {
+    background-color: rgba(0, 0, 0, 0.5) !important; }
+    .container header .top .top-wrapper .menu .container-fluid #bs-example-navbar-collapse-1 .open .dropdown-menu li {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.8); }
   .container .content .header-box {
     height: auto;
     background-size: cover; }

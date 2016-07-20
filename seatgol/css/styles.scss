@@ -80,31 +80,34 @@ $wrapper-size: 1135px;
                 font-size: 16px;
               }
 
-              &.selected {
-                // position: relative;
-                // display: inline-block;
-                .dropdown-content { display: block; }
-                ul {
-                  margin: 5px 0px 0px 20px;
-                  li {
-                    a {
-                      color: $gray!important;
+              // position: relative;
+              // display: inline-block;
+              .dropdown-content { display: block; }
+              ul {
+                margin: 5px 0px 0px 20px;
+                li {
+                  a {
+                    color: $gray!important;
+                    @media only screen and ( max-width: 1215px ){
+                      color: rgba(255,255,255,0.8)!important;
                     }
                   }
-                  &:hover {
-                    border-bottom: none!important;
-                  }
                 }
-                &.open {
-                  a {
-                    background-color: transparent!important;
-                  }
+                &:hover {
+                  border-bottom: none!important;
                 }
+              }
+              &.open {
+                a {
+                  background-color: transparent!important;
+                }
+              }
+              &.selected {
               }
 
               .dropdown-content {
                   display: none;
-                  color: $gray;
+                  // color: $gray;
                   position: absolute;
                   margin-top: 35px;
                   margin-left: -12px;
@@ -417,6 +420,7 @@ $wrapper-size: 1135px;
                     border: 0;
                     li {
                       float: left;
+                      color: rgba(255,255,255,0.8);
                     }
                   }
                 }
@@ -498,6 +502,21 @@ $wrapper-size: 1135px;
           .top-wrapper {
             // padding-left: 40px;
             // padding-right: 40px;
+            .menu {
+              .container-fluid {
+                #bs-example-navbar-collapse-1 {
+                  background-color: rgba(0,0,0,0.5)!important;
+                  .open {
+                    .dropdown-menu {
+                        li {
+                          font-size: 16px;
+                          color: rgba(255,255,255,0.8);
+                        }
+                    }
+                  }
+                }
+              }
+            }
           }
       }
     }
