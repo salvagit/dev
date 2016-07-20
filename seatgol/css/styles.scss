@@ -68,6 +68,10 @@ $wrapper-size: 1135px;
           background-color: transparent!important;
           border-color: transparent!important;
 
+          .container-fluid {
+            padding: 0;
+          }
+
           .topNav {
             width: auto; // adjust
             margin-top: 35px!important;
@@ -160,7 +164,7 @@ $wrapper-size: 1135px;
         .search-box {
           display: none;
 
-          width: auto;
+          width: 278px;
 
           margin: 50px 0 0 0;
           padding: 0;
@@ -189,13 +193,11 @@ $wrapper-size: 1135px;
         }
 
         &.search {
-
           .search-box {
-
             display: block;
-
           }
         }
+
         .contacto {
           color: white;
           width: auto;
