@@ -375,6 +375,77 @@ $wrapper-size: 1135px;
   }
 
 }
+
+@media (max-width: 1215px) and (min-width: 768px) {
+  body > div > header > div {
+    height: auto!important;
+    padding: 0;
+  }
+  body > div > header > div > div > nav > div {
+    .navbar-header {
+      float: none;
+    }
+  }
+  #bs-example-navbar-collapse-1 > div.contacto.nav.navbar-nav.navbar-left,
+  #bs-example-navbar-collapse-1 > div.contacto.nav.navbar-nav.navbar-right {
+      float: none !important;
+  }
+  body > div > header > div > div > nav > div > div.navbar-header > button {
+    margin-top: 50px;
+      display: block;
+  }
+  #bs-example-navbar-collapse-1 {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      background-color: rgba(0,0,0,0.5);
+      padding-left: 0;
+      margin-left: 0;
+      padding-right: 0;
+      margin-right: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+      &.collapse {
+        display: none!important;
+      }
+      &.in {
+        display:block !important;
+      }
+  }
+  body > div > header > div > div {
+    padding: 0;
+    nav {
+      margin: 0!important;
+      border-width: 0 0 1px;
+      &:not(.container-fluid > #bs-example-navbar-collapse-1.in) {
+        margin-top: 314px;
+      }
+    }
+  }
+  #bs-example-navbar-collapse-1 > ul {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  #bs-example-navbar-collapse-1 > ul >li {
+      float: none;
+  }
+  #bs-example-navbar-collapse-1 > ul > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  #bs-example-navbar-collapse-1 > ul > li.selected.open > ul {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+}
+
 // $wrapper: calc(#{$wrapper-size} + 80px);
 @media only screen and ( max-width: 1215px )  {
 
@@ -382,8 +453,8 @@ $wrapper-size: 1135px;
     header {
       .top{
           .top-wrapper {
-            padding-left: 40px;
-            padding-right: 40px;
+            // padding-left: 40px;
+            // padding-right: 40px;
           }
       }
     }
