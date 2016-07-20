@@ -8,11 +8,22 @@
         background-position-y: -180px;
         .header-wrapper {
           .search {
-            padding-top: 220px;
+            padding-top: 400px!important;
             margin: 0;
-            text-align: left;
-            h2 { font-size: 30px; }
-            h3 { font-size: 25px; }
+            text-align: left!important;
+            h2 {
+              font-size: 30px;
+              margin-left: 14px;
+            }
+            .breadcrumb {
+              font-size: 25px;
+              background-color: transparent;
+              li {
+                a {
+                  color: white;
+                }
+              }
+            }
           }
         }
     }

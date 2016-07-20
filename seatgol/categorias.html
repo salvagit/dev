@@ -10,11 +10,14 @@
         <link rel="apple-touch-icon" href="#">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/categorias.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -27,48 +30,76 @@
 
             <div class="top">
               <div class="top-wrapper search">
-                <a class="logo" href="index.html">
-                  <img src="img/logo.svg" alt="seatgol logo" />
-                </a>
 
-                  <nav class="menu">
-                    <ul class="topNav">
-                      <li>
-                        <a class="dropbtn" href="#">Conciertos</a>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                          <button type="button" class="button-menu">Ver más conciertos</button>
+                  <nav class="menu navbar navbar-default navbar-static-top" role="navigation">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="logo navbar-brand" href="index.html">
+                          <img src="img/logo.svg" alt="seatgol logo" />
+                        </a>
+                      </div>
+
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="topNav nav navbar-nav">
+                          <li>
+                            <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Conciertos
+                              <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                              <li><a href="#">Conciertos 1</a></li>
+                              <li><a href="#">Conciertos 2</a></li>
+                              <li><a href="#">Conciertos 3</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Deportes
+                              <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                              <li><a href="#">Deportes 1</a></li>
+                              <li><a href="#">Deportes 2</a></li>
+                              <li><a href="#">Deportes 3</a></li>
+                              <li><button type="button" class="button-menu">Ver más conciertos</button></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Teatros
+                              <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                              <li><a href="#">Teatros 1</a></li>
+                              <li><a href="#">Teatros 2</a></li>
+                              <li><a href="#">Teatros 3</a></li>
+                              <li><button type="button" class="button-menu">Ver más conciertos</button></li>
+                            </ul>
+                          </li>
+                        </ul>
+
+                        <div class="search-box navbar-form navbar-left">
+                          <form class="search-form" action="#" method="post">
+                            <input type="text" name="q" value="" placeholder="Buscar Tickets ...">
+                            <button type="submit" name="button"></button>
+                          </form>
                         </div>
-                      </li>
-                      <li>
-                        <a href="#">Deportes</a>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
+
+                        <div class="contacto nav navbar-nav navbar-right">
+                          <p>Contacto <span class="bold">seatgol@mail.com</span></p>
                         </div>
-                      </li>
-                      <li>
-                        <a href="#">Teatros</a>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                          <a href="#">Link 4</a>
-                        </div>
-                      </li>
-                    </ul>
+
+                      </div>
+                    </div>
                   </nav>
-                  <div class="search-box">
-                    <form class="search-form" action="#" method="post">
-                      <input type="text" name="q" value="" placeholder="Buscar Tickets ...">
-                      <button type="submit" name="button"></button>
-                    </form>
-                  </div>
-                  <div class="contacto">
-                    <p>Contacto <span class="bold">seatgol@mail.com</span></p>
-                  </div>
+
                 </div>
               </div>
 
@@ -80,14 +111,16 @@
            **
           ---->
           <div class="content">
-
             <div class="header-box">
               <div class="header-wrapper">
 
                 <div class="search">
-                  <!-- Add your site or application content here -->
                   <h2>Rock & Pop Tickets</h2>
-                  <h3>Seatgol > Conciertos > Rock & Pop</h3>
+                  <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Conciertos</a></li>
+                      <li class="active">Rock & Pop</li>
+                  </ul>
                 </div>
 
               </div>
@@ -128,7 +161,6 @@
 
               </article>
             </section>
-
           </div>
 
           <footer>
@@ -144,7 +176,6 @@
                 <li><a href="#">Politicas de Privacidad</a></li>
               </ul>
 
-
             </div>
 
             <hr>
@@ -156,6 +187,9 @@
         </div>
 
         <script src="js/main.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     </body>
 </html>
