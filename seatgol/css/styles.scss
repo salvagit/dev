@@ -216,7 +216,18 @@ $wrapper-size: 1135px;
     width: 100%;
     .header-box {
 
-      background: url('../img/fondo-recitales.jpg') top center no-repeat transparent;
+      &.recitales {
+        background: url('../img/fondo-recitales.jpg') top center no-repeat transparent;
+      }
+
+      &.deportes {
+        background: url('../img/fondo-deportes.jpg') top center no-repeat transparent;
+      }
+
+      &.teatro {
+        background: url('../img/fondo-teatro.jpg') top center no-repeat transparent;
+      }
+
       color: white;
       height: 568px;
 
@@ -518,8 +529,12 @@ $wrapper-size: 1135px;
             // padding-left: 40px;
             // padding-right: 40px;
             .menu {
-              padding: 20px 20px 0px;
+              padding: 20px 20px 0;
+
               .container-fluid {
+                .navbar-header {
+                  margin-bottom: 20px;
+                }
                 #bs-example-navbar-collapse-1 {
                   background-color: rgba(0,0,0,0.75)!important;
                   .open {

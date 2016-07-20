@@ -164,9 +164,14 @@
   .container .content {
     width: 100%; }
     .container .content .header-box {
-      background: url("../img/fondo-recitales.jpg") top center no-repeat transparent;
       color: white;
       height: 568px; }
+      .container .content .header-box.recitales {
+        background: url("../img/fondo-recitales.jpg") top center no-repeat transparent; }
+      .container .content .header-box.deportes {
+        background: url("../img/fondo-deportes.jpg") top center no-repeat transparent; }
+      .container .content .header-box.teatro {
+        background: url("../img/fondo-teatro.jpg") top center no-repeat transparent; }
       .container .content .header-box .header-wrapper {
         width: 1024px;
         margin: 0 auto;
@@ -394,7 +399,9 @@
     padding-bottom: 10px; } }
 @media only screen and (max-width: 1215px) {
   .container header .top .top-wrapper .menu {
-    padding: 20px 20px 0px; }
+    padding: 20px 20px 0; }
+    .container header .top .top-wrapper .menu .container-fluid .navbar-header {
+      margin-bottom: 20px; }
     .container header .top .top-wrapper .menu .container-fluid #bs-example-navbar-collapse-1 {
       background-color: rgba(0, 0, 0, 0.75) !important; }
       .container header .top .top-wrapper .menu .container-fluid #bs-example-navbar-collapse-1 .open .dropdown-menu li {
