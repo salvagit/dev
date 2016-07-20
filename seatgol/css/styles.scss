@@ -402,9 +402,12 @@ $wrapper-size: 1135px;
           .container-fluid {
             #bs-example-navbar-collapse-1 {
               background-color: rgba(0,0,0,0.75);
+              border-top: 1px solid white;
               float: none;
               margin-left: -30px;
               margin-right: -30px;
+              margin-top: 20px;
+              padding: 0 18px;
               .topNav {
                 position: static;
                 width: auto;
@@ -515,7 +518,7 @@ $wrapper-size: 1135px;
             // padding-left: 40px;
             // padding-right: 40px;
             .menu {
-              padding: 20px 20px 0;
+              padding: 20px 20px 0px;
               .container-fluid {
                 #bs-example-navbar-collapse-1 {
                   background-color: rgba(0,0,0,0.75)!important;
