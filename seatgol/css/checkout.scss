@@ -18,20 +18,14 @@
       }
       .first-column {}
       .second-column {
-        border: 1px solid $gray;
+        border: 1px solid #cacaca;
         .resumen-container {
+          background-color: #f6f4f5;
           height: auto;
-          border: 1px solid $gray;
-          background-color: $gray;
-          .resumen-row {
-            .key {
-              width: 20%;
-              float: left;
-            }
-            .value {
-              width: 80%;
-              float: right;
-            }
+          margin: 0 -15px;
+          padding-bottom: -15px;
+          .resumen-wrapper {
+            margin: 0 15px;
           }
         }
       }

@@ -12,17 +12,14 @@
     .container .content .content-wrapper .row {
       margin-bottom: 20px; }
     .container .content .content-wrapper .second-column {
-      border: 1px solid #777; }
+      border: 1px solid #cacaca; }
       .container .content .content-wrapper .second-column .resumen-container {
+        background-color: #f6f4f5;
         height: auto;
-        border: 1px solid #777;
-        background-color: #777; }
-        .container .content .content-wrapper .second-column .resumen-container .resumen-row .key {
-          width: 20%;
-          float: left; }
-        .container .content .content-wrapper .second-column .resumen-container .resumen-row .value {
-          width: 80%;
-          float: right; }
+        margin: 0 -15px;
+        padding-bottom: -15px; }
+        .container .content .content-wrapper .second-column .resumen-container .resumen-wrapper {
+          margin: 0 15px; }
 
 @media only screen and (max-width: 1135px) {
   .container .content .content-wrapper {
