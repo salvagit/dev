@@ -1,0 +1,87 @@
+@import "colors";
+
+.lighter { font-weight: lighter; }
+
+.hidden { display: none; }
+
+.bold { font-weight: bolder; }
+
+.button-menu {
+  font-size: 16px;
+  min-width: 165px;
+  color: $green;
+  @include border-radius(20px);
+  border: 0.5px solid $green;
+  background-color: transparent;
+  margin: 0 10px 10px;
+  padding: 5px;
+}
+
+.search-form {
+
+  margin-bottom: 10px;
+
+  *:focus { outline: none; }
+
+  input, button {
+    height: 68px;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+
+  input {
+    width: 60%;
+    margin-right: -5px;
+    padding-left: 20px;
+    color: $gray;
+    @include border-radius(35px 0 0 35px);
+    font-size: 23px;
+  }
+
+  button {
+    width: 15%;
+    font-size: 23px;
+    @include border-radius(0 35px 35px 0);
+    background-color: $green;
+    padding-left: 10px;
+    &::before {
+      content: '';
+      margin: -4px -20px 0 0;
+      width: 35px;
+      height: 35px;
+      background-image: url('../img/search.svg');
+      float: left;
+    }
+    // Media
+    @media only screen and ( max-width: 950px )  {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+
+.square {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  &.blue {
+    background-color: $light-blue;
+  }
+}
+
+.button {
+  width: 150px;
+  height: 45px;
+
+  border: 0;
+
+  border-radius: 5px;
+
+  background: $light-green;
+
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+}
