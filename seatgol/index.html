@@ -32,7 +32,6 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -102,7 +101,7 @@
 
                         <div class="search-box navbar-form navbar-left">
                           <form class="search-form" action="#" method="post">
-                            <input type="text" name="q" value="" placeholder="Buscar Tickets ...">
+                            <input type="text" class="" name="q" value="" placeholder="Buscar Tickets ...">
                             <button type="submit" name="button"></button>
                           </form>
                         </div>
@@ -134,7 +133,7 @@
                   <h3>Subtitulo sobre la venta de entradas</h3>
 
                   <form class="search-form" action="#" method="post">
-                    <input type="text" name="q" value="" placeholder="Buscar Tickets ...">
+                    <input type="text" name="q" value="" class="typeahead" placeholder="Buscar Tickets ...">
                     <button type="submit" name="button">Buscar</button>
                   </form>
 
@@ -174,17 +173,17 @@
 
         </div>
 
-        <script src="js/main.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+        <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.jquery.js" charset="utf-8"></script>
         <script type="text/javascript">
           // get background;
           var arrBacks = ['teatro', 'recitales', 'deporte'],
               rand = Math.floor(Math.random() * 3);
           document.querySelector('.header-box').classList.toggle(arrBacks[rand]);
         </script>
+        <script src="js/main.js"></script>
 
     </body>
 </html>

@@ -1,4 +1,5 @@
 @import "colors";
+@import "mixins";
 
 .lighter { font-weight: lighter; }
 
@@ -17,11 +18,11 @@
   padding: 5px;
 }
 
+form { *:focus { outline: none; } }
+
 .search-form {
 
   margin-bottom: 10px;
-
-  *:focus { outline: none; }
 
   input, button {
     height: 68px;
@@ -30,17 +31,66 @@
     vertical-align: middle;
   }
 
-  input {
-    width: 60%;
-    margin-right: -5px;
-    padding-left: 20px;
-    color: $gray;
-    @include border-radius(35px 0 0 35px);
-    font-size: 23px;
+  .twitter-typeahead {
+    // width: 60%;
+    width: 70%!important;
+    margin-right: -4px;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 0!important;
+    input {
+      width: 100%;
+      margin-right: -5px;
+      margin-top: -21px;
+      padding-left: 30px;
+      color: $gray;
+      @include border-radius(35px 0 0 35px);
+      font-size: 23px;
+    }
+    pre {
+      margin: 20px 0 0 30px;
+      @include border-radius(10px);
+      background: white;
+      box-shadow: black;
+    }
+
+    .tt-hint {
+        color: #999;
+    }
+
+    .tt-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+        width: 422px;
+        margin: 12px 0 0 20px;
+        padding: 8px 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        color: $gray;
+    }
+
+    .tt-suggestion {
+        padding: 3px 20px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .tt-suggestion.tt-is-under-cursor { /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
+        color: #fff;
+        background-color: #0097cf;
+
+    }
+
+    .tt-suggestion p {
+        margin: 0;
+    }
+
   }
 
   button {
     width: 15%;
+    margin-left: -4px;
     font-size: 23px;
     @include border-radius(0 35px 35px 0);
     background-color: $green;

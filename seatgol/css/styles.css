@@ -21,28 +21,69 @@
   margin: 0 10px 10px;
   padding: 5px; }
 
+form *:focus {
+  outline: none; }
+
 .search-form {
   margin-bottom: 10px; }
-  .search-form *:focus {
-    outline: none; }
   .search-form input, .search-form button {
     height: 68px;
     border: 0;
     box-sizing: border-box;
     vertical-align: middle; }
-  .search-form input {
-    width: 60%;
-    margin-right: -5px;
-    padding-left: 20px;
-    color: #777;
-    -webkit-border-radius: 35px 0 0 35px;
-    -moz-border-radius: 35px 0 0 35px;
-    -ms-border-radius: 35px 0 0 35px;
-    -o-border-radius: 35px 0 0 35px;
-    border-radius: 35px 0 0 35px;
-    font-size: 23px; }
+  .search-form .twitter-typeahead {
+    width: 70% !important;
+    margin-right: -4px;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 0 !important; }
+    .search-form .twitter-typeahead input {
+      width: 100%;
+      margin-right: -5px;
+      margin-top: -21px;
+      padding-left: 30px;
+      color: #777;
+      -webkit-border-radius: 35px 0 0 35px;
+      -moz-border-radius: 35px 0 0 35px;
+      -ms-border-radius: 35px 0 0 35px;
+      -o-border-radius: 35px 0 0 35px;
+      border-radius: 35px 0 0 35px;
+      font-size: 23px; }
+    .search-form .twitter-typeahead pre {
+      margin: 20px 0 0 30px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: black; }
+    .search-form .twitter-typeahead .tt-hint {
+      color: #999; }
+    .search-form .twitter-typeahead .tt-menu {
+      /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+      width: 422px;
+      margin: 12px 0 0 20px;
+      padding: 8px 0;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      color: #777; }
+    .search-form .twitter-typeahead .tt-suggestion {
+      padding: 3px 20px;
+      font-size: 18px;
+      line-height: 24px; }
+    .search-form .twitter-typeahead .tt-suggestion.tt-is-under-cursor {
+      /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
+      color: #fff;
+      background-color: #0097cf; }
+    .search-form .twitter-typeahead .tt-suggestion p {
+      margin: 0; }
   .search-form button {
     width: 15%;
+    margin-left: -4px;
     font-size: 23px;
     -webkit-border-radius: 0 35px 35px 0;
     -moz-border-radius: 0 35px 35px 0;
