@@ -45,6 +45,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 html, body {
   height: 100%;
   margin: 0;
@@ -63,19 +69,34 @@ html, body {
 
 .header {
   background-color: #eaebed;
-  padding: 10px 0;
+  padding: 13px 0 9px 0;
+  position: relative;
   text-align: center; }
   .header h1 {
     color: #418fcd; }
+    .header h1 img {
+      display: inline-block;
+      width: 200px; }
 
 .hamburguer-menu {
-  display: none; }
+  background: url("../img/hamburguer-icon.png") no-repeat scroll center center transparent;
+  background-size: 22px auto;
+  display: block;
+  padding: 5px;
+  width: 22px;
+  height: 23px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%); }
 
 .content-banner {
+  box-shadow: inset 0 -50px 50px 0 rgba(0, 0, 0, 0.25);
   position: relative; }
 
 .content-banner-title {
   color: #fff;
+  font-size: 24px;
   position: absolute;
   left: 15px;
   bottom: 15px;
@@ -84,15 +105,18 @@ html, body {
 .content-banner-image {
   display: block;
   height: auto;
-  max-width: 100% !important; }
+  max-width: 100% !important;
+  position: relative;
+  z-index: -1; }
 
-.content-list .item {
+.content-list .list-item {
   border-bottom: 1px solid #c4cccf;
   display: block;
+  font-size: 16px;
   padding: 30px 15px;
   position: relative;
   text-decoration: none; }
-  .content-list .item:before {
+  .content-list .list-item:before {
     content: '';
     width: 0;
     height: 0;
@@ -104,26 +128,26 @@ html, body {
     right: 15px;
     transform: translateY(-50%); }
 
-.event-list .item {
+.content-list .list-item-event {
   border-bottom: 1px solid #c4cccf;
   display: block;
   padding: 30px 0;
   text-decoration: none; }
 
-.event {
+.event-item {
   width: 100%; }
-  .event td {
+  .event-item td {
     padding: 0 15px;
     vertical-align: middle; }
-  .event .event-time {
+  .event-item .event-time {
     text-align: center; }
-  .event .event-price {
+  .event-item .event-price {
     display: none;
     text-align: right; }
     @media screen and (min-width: 414px) {
-      .event .event-price {
+      .event-item .event-price {
         display: table-cell; } }
-    .event .event-price span {
+    .event-item .event-price span {
       display: block; }
 
 .footer {
@@ -131,7 +155,8 @@ html, body {
   padding: 25px 0;
   text-align: center; }
   .footer p {
-    color: #465769; }
+    color: #465769;
+    font-size: 14px; }
     .footer p a {
       color: inherit; }
   .footer p:first-child {
