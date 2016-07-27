@@ -1,0 +1,67 @@
+@import "mixins";
+@import "colors";
+
+.border{border:1px solid black;}
+
+.container {
+  .content {
+    margin-top: 200px;
+    .content-wrapper {
+      width: 1135px;
+      margin: 0 auto;
+      padding: 30px;
+      .first-column,second-column {
+        padding: 20px;
+      }
+      .row {
+        margin-bottom: 20px;
+      }
+      .first-column {}
+      .second-column {
+        border: 1px solid #cacaca;
+        .resumen-container {
+          background-color: #f6f4f5;
+          height: auto;
+          margin: 0 -15px;
+          padding-bottom: -15px;
+          .resumen-wrapper {
+            margin: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    .content {
+      .content-wrapper {
+        .first-column {
+        }
+        .second-column {
+          // float: left;
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    .content {
+
+    }
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .container {
+    .content {
+      .content-wrapper {
+        width: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,267 @@
+@import "mixins";
+@import "colors";
+
+$mobile-width: 768px;
+
+.container {
+  .content {
+    .header-box {
+      // height: 300px!important;
+      background-position: bottom!important;
+      .header-wrapper {
+        // width: 1135px;
+        .search {
+          padding-top: 180px!important;
+          margin: 0;
+          text-align: left!important;
+          h1 {
+            font-size: 30px;
+            margin-left: 14px;
+          }
+        }
+      }
+    }
+    .section {
+      margin: 50px auto 0;
+      width: 1135px;
+      text-align: center;
+      p {
+        //margin: 20px 0;
+      }
+      .article {
+        /**
+         * First Column
+         */
+        .first-column {
+          .box-artista {
+            // padding-left: 15%;
+            .box-artista-wrapper {
+              width: 403px;
+              margin: 0 auto;
+              div:nth-child(1) {
+                padding: 0;
+                .date-wrapper {
+                  width: 95px;
+                  height: 128px;
+
+                  padding: 25px 0;
+
+                  float: right;
+
+                  background-color: #f6f4f5;
+
+                  border: .8px solid #e1e1e1;
+                  // text-align: right;
+                  .row {
+                    // margin: 16px;
+                    text-align: center;
+                    p {margin: 0;}
+                  }
+                  .row:nth-child(2), .row:nth-child(3) {
+                    font-size: 17px;
+                    font-weight: 100;
+                    color: #717171;
+                  }
+                  .row:nth-child(1) {
+                    font-size: 18px;
+                    color: #0a4040;
+                    font-weight: bolder;
+                    border: 0;
+                  }
+                  @media only screen and (max-width: $mobile-width) {
+                    width: 100%;
+                  }
+                }
+              }
+              div:nth-child(2) {
+                padding: 0;
+                margin: 0;
+                border-radius: 4px;
+                img {
+                  @media only screen and (max-width: $mobile-width) {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+
+              @media only screen and (max-width: $mobile-width) {
+                width: 100%;
+              }
+            }
+          }
+          .row:nth-child(2) {
+            margin-top: 20px;
+            img {
+              border: 1.5px solid #e1e1e1;
+              @media only screen and (max-width: $mobile-width) {
+                width: 100%;
+              }
+            }
+          }
+          // Locale Details.
+          div:nth-child(3) {
+            .details-wrapper {
+              margin: 0 auto 20px;
+              padding: 0 20px;
+
+              .row {margin-top: 20px;}
+
+              div:nth-child(2) {
+                p {
+                  text-align: left;
+                  margin-left: 20px;
+                }
+              }
+
+              div:nth-child(3) {padding: 0;margin-bottom:0;}
+
+              @media only screen and (max-width:1000px) and (min-width:768px) {
+                width: 55%;
+                margin: 0 25%;
+              }
+            }
+          }
+        }
+        /**
+         * Second Column
+         */
+        .second-column {
+          text-align: left;
+          .row:nth-child(1) {
+
+            .location {
+              vertical-align: middle;
+              div:nth-child(2) {
+                h3 {
+                  margin-top: 0;
+                }
+              }
+              div:nth-child(3) {
+                span {
+                  color: #c1c1c1;
+                  font-size: 20px;
+                }
+              }
+            }
+            .row:nth-child(2) p {
+              font-size: 16px;
+              text-align: justify;
+              padding: 10px 20px;
+            }
+
+          }
+
+          .row:nth-child(2) {
+            table {
+              thead {
+                background-color: $light-gray;
+                tr {
+                  th {
+                    text-align: center;
+                  }
+                  th:nth-child(1) {
+                    width: 40%;
+                    min-width: 250px;
+                  }
+                  th:nth-child(2) {width: 15%;}
+                  th:nth-child(3) {width: 25%;}
+                  th:nth-child(4) {width: 20%;}
+                }
+              }
+              tbody {
+                tr {
+                  text-align: center;
+                  td:nth-child(2) {
+                    padding-top: 20px;
+                  }
+                  td:nth-child(1) p, td:nth-child(3) p {
+                    margin-top: 10px;
+                  }
+                  td:nth-child(1) {
+                    div, p, img {
+                      vertical-align: middle;
+                    }
+                    div {
+                      float: left;
+                      margin: 10px 10px 0;
+                    }
+                    p {
+                      float:left;
+                      font-size: 18px;
+                      font-weight: bolder;
+                      overflow: hidden;
+                    }
+                    img {
+                      float:right;
+                      margin-top: 5px;
+                    }
+                  }
+                  td:nth-child(3) {
+                    font-size: 18px;
+                    font-weight: bolder;
+                  }
+                }
+              }
+            }
+          }
+          .row:nth-child(3) {
+            .event {margin-left: 20px;}
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    .content {
+      .header-box {
+        .header-wrapper {
+          width: auto!important;
+        }
+      }
+      .section {
+        width: auto;
+        padding: 0 20px;
+        .article {
+          .text-block {
+            // width: 100%;
+            // float: none;
+          }
+          .second-column {
+            table {
+              tbody {
+                tr {
+                  td:nth-child(1) {
+                    .square, .icon-ticket {
+                      // margin: 0 auto;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .container {
+    .content {
+      .header-box {
+          .header-wrapper {
+            width: 100%;
+          }
+      }
+      .section {
+        // width: auto;
+        padding: 0 20px;
+        .article {}
+      }
+    }
+  }
+}
