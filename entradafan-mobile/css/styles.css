@@ -104,6 +104,28 @@ html, body {
     right: 15px;
     transform: translateY(-50%); }
 
+.event-list .item {
+  border-bottom: 1px solid #c4cccf;
+  display: block;
+  padding: 30px 0;
+  text-decoration: none; }
+
+.event {
+  width: 100%; }
+  .event td {
+    padding: 0 15px;
+    vertical-align: middle; }
+  .event .event-time {
+    text-align: center; }
+  .event .event-price {
+    display: none;
+    text-align: right; }
+    @media screen and (min-width: 414px) {
+      .event .event-price {
+        display: table-cell; } }
+    .event .event-price span {
+      display: block; }
+
 .footer {
   background-color: #232d37;
   padding: 25px 0;
