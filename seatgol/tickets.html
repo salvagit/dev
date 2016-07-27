@@ -116,11 +116,11 @@
 
                 <div class="search">
                   <h1>Coldplay tickets</h1>
-                  <ul class="breadcrumb">
+                  <ul id="breadcrumb" class="breadcrumb">
                       <li><a href="#">Home</a></li>
                       <li><a href="#">Conciertos</a></li>
                       <li><a href="#">Rock & Pop</a></li>
-                      <li class="active">Coldplay Buenos Aires Jueves 11 de Junio 21:30 hs</li>
+                      <li class="active"><a href="#">Coldplay Buenos Aires Jueves 11 de Junio 21:30 hs</a></li>
                   </ul>
                 </div>
 
@@ -134,13 +134,15 @@
 
                   <div class="row box-artista">
                     <div class="box-artista-wrapper">
-                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="row">Jun 11</div>
-                        <div class="row">Miercoles</div>
-                        <div class="row">21:30</div>
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="date-wrapper">
+                          <div class="row"><p>JUN 11</p></div>
+                          <div class="row"><p>Miercoles</p></div>
+                          <div class="row"><p>21:30</p></div>
+                        </div>
                       </div>
-                      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                        <img src="img/ticket_image.png" alt="" />
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <img src="img/ticket_image.png" alt="" width="299" height="128"/>
                       </div>
                     </div>
                   </div>
@@ -149,19 +151,75 @@
                     <img src="img/escenario.png" alt="" />
                   </div>
 
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                          <div class="square blue"></div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                          <p>Campo VIP Premium</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                          <div class="square green"></div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                          <p>Campo General</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                          <div class="square orange"></div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                          <p>Platea A</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                          <div class="square fuccia"></div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                          <p>Campo VIP</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                          <div class="square violet"></div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                          <p>Cabecera</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                          <div class="square soft-blue"></div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                          <p>Platea B</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
 
-                <div class="col-lg-7 col-md-7 col-sm-12 second-column">
+                <div class="col-lg-7 col-md-6 col-sm-12 second-column">
 
                   <div class="row">
                     <div class="row location">
                       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                         <img src="img/gps_icon.png" alt="" />
                       </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                      <div class="col-lg-5 col-md-5 col-sm-10 col-xs-10">
                         <h3>Teatro Opera City</h3>
                       </div>
-                      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <span>Corrientes 3464 - Buenos Aires - Argentina</span>
                       </div>
                     </div>
@@ -219,8 +277,71 @@
                             </td>
                           </tr>
 
+                          <tr>
+                            <td>
+                              <div class="square blue"></div>
+                              <p>Campo VIP Premium</p>
+                              <img src="img/ticket.png" alt="" />
+                            </td>
+                            <td>
+                              <span>De 1 a 2</span>
+                            </td>
+                            <td>
+                              <p>1.542 AR$</p>
+                            </td>
+                            <td>
+                              <button type="button" name="button" class="button">Comprar</button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="square blue"></div>
+                              <p>Campo VIP Premium</p>
+                              <img class="icon-ticket" src="img/ticket.png" alt="" />
+                            </td>
+                            <td>
+                              <span>De 1 a 2</span>
+                            </td>
+                            <td>
+                              <p>1.542 AR$</p>
+                            </td>
+                            <td>
+                              <button type="button" name="button" class="button">Comprar</button>
+                            </td>
+                          </tr>
+
                         </tbody>
                       </table>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <h3>Otros Eventos de Coldplay</h3>
+                    <hr>
+                    <div class="event">
+                      <div class="row">
+                        <h4>Coldplay Argentina</h4>
+                      </div>
+                      <div class="row">
+                        <p>Sábado 8 octubre 2016 21:00h. Estadio Único de La Plata, La Plata, Argentina</p>
+                      </div>
+                    </div>
+                    <div class="event">
+                      <div class="row">
+                        <h4>Coldplay Colombia</h4>
+                      </div>
+                      <div class="row">
+                        <p>Jueves 29 septiembre 2016 20:00h. Parque Simón Bolívar, Bogotá, Colombia</p>
+                      </div>
+                    </div>
+                    <div class="event">
+                      <div class="row">
+                        <h4>Coldplay Chile</h4>
+                      </div>
+                      <div class="row">
+                        <p>Domingo 2 octubre 2016 20:00h. Movistar Arena, Santiago de Chile, Chile</p>
+                      </div>
                     </div>
                   </div>
 

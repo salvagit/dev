@@ -66,9 +66,12 @@
   width: 25px;
   height: 25px;
   border-radius: 4px;
-  &.blue {
-    background-color: $light-blue;
-  }
+  &.blue {background-color: $light-blue;}
+  &.green {background-color: #8bc229;}
+  &.orange {background-color: #ff9900;}
+  &.fuccia {background-color: #ff2965;}
+  &.violet {background-color: #b42cbc;}
+  &.soft-blue {background-color: #00bbd8;}
 }
 
 .button {
@@ -84,4 +87,18 @@
   color: white;
   font-weight: bolder;
   font-size: 16px;
+}
+
+#breadcrumb {
+  font-size: 18px;
+  font-weight: 100;
+  background-color: transparent;
+  li {
+    a {
+      color: white;
+      &.active {
+        font-weight: bolder;
+      }
+    }
+  }
 }
