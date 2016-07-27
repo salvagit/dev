@@ -12,9 +12,16 @@ html {
 html, body {
   height: 100%;
   margin: 0; padding: 0;  /* to avoid scrollbars */
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  width: 100%;
 }
 
 .container {
+  background-color: #fff;
   display: flex;  /* use the flex model */
   min-height: 100%;
   flex-direction: column;  /* learn more: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
@@ -41,10 +48,12 @@ html, body {
   }
 }
 
-.hamburguer-menu {
+.hamburguer-button {
   background: url('../img/hamburguer-icon.png') no-repeat scroll center center transparent;
   background-size: 22px auto;
+  border: none;
   display: block;
+  outline: none;
   padding: 5px;
   width: 22px;
   height: 23px;
@@ -158,4 +167,34 @@ html, body {
   p:first-child {
     margin-bottom: 25px;
   }
+}
+
+// slideout
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
 }
