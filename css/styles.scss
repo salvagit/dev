@@ -1,0 +1,107 @@
+$border-color: green;
+
+@keyframes border-odd{
+  0% {
+    opacity: 0;
+    border-top: 0px solid $border-color;
+    border-top-left-radius: 0px;
+    border-right: 0px solid $border-color;
+
+    border-bottom: 0px solid $border-color;
+    border-bottom-right-radius: 0px;
+  }
+  50% {
+    opacity: .7;
+    border-top: .8px solid $border-color;
+    border-top-left-radius: 200px;
+    border-right: .8px solid $border-color;
+
+    border-bottom: .8px solid $border-color;
+    border-bottom-right-radius: 200px;
+  }
+  100% {
+    opacity: 0;
+    border-top: 0px solid $border-color;
+    border-top-left-radius: 0px;
+    border-right: 0px solid $border-color;
+
+    border-bottom: 0px solid $border-color;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+@keyframes border-even{
+  0% {
+    opacity: 0;
+    border-bottom: 0 solid $border-color;
+    border-bottom-right-radius: 0px;
+    border-right: 0px solid $border-color;
+
+    border-top: 0px solid $border-color;
+    border-top-left-radius: 0px;
+
+    transform: rotate(90deg);
+  }
+  50% {
+    opacity: .5;
+    border-bottom: .8px solid $border-color;
+    border-bottom-right-radius: 200px;
+    border-right: .8px solid $border-color;
+
+    border-top: .8px solid $border-color;
+    border-top-left-radius: 200px;
+
+  }
+  100% {
+    opacity: 0;
+    border-bottom: 0px solid $border-color;
+    border-bottom-right-radius: 0px;
+    border-right: 0px solid $border-color;
+
+    border-top: 0px solid $border-color;
+    border-top-left-radius: 0px;
+
+    transform: rotate(90deg);
+  }
+}
+
+html {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+  .box {
+    width: 50px;
+    height: 50px;
+
+    margin: 0;
+    float: right;
+
+    transform: rotate(180deg);
+
+    border: 0;
+
+    &:nth-child(odd) {
+      -webkit-animation: border-odd 5s infinite; /* Safari 4+ */
+      -moz-animation:    border-odd 5s infinite; /* Fx 5+ */
+      -o-animation:      border-odd 5s infinite; /* Opera 12+ */
+      animation:         border-odd 5s infinite; /* IE 10+, Fx 29+ */
+    }
+    &:nth-child(even) {
+      -webkit-animation: border-even 5s infinite; /* Safari 4+ */
+      -moz-animation:    border-even 5s infinite; /* Fx 5+ */
+      -o-animation:      border-even 5s infinite; /* Opera 12+ */
+      animation:         border-even 5s infinite; /* IE 10+, Fx 29+ */
+    }
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
