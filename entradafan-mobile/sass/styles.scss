@@ -73,6 +73,44 @@ html, body {
   }
 }
 
+.event-list {
+
+  .item {
+    border-bottom: 1px solid #c4cccf;
+    display: block;
+    padding: 30px 0;
+    text-decoration: none;
+  }
+}
+
+.event {
+  width: 100%;
+
+  tr {}
+
+  td {
+    padding: 0 15px;
+    vertical-align: middle;
+  }
+
+  .event-time {
+    text-align: center;
+  }
+
+  .event-price {
+    display: none;
+    text-align: right;
+    
+    @media screen and (min-width: 414px) {
+      display: table-cell;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
 // footer
 .footer {
   background-color: #232d37;
