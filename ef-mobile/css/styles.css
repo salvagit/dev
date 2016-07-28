@@ -105,12 +105,73 @@ body {
   display: block;
   outline: none;
   padding: 5px;
-  width: 22px;
-  height: 23px;
+  width: 32px;
+  height: 33px;
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%); }
+
+.content-search {
+  padding: 15px; }
+
+.search-event-input {
+  background: url("../img/search-icon.png") no-repeat scroll 0 center transparent;
+  background-size: 27px auto;
+  border: 0;
+  color: #a6adae;
+  font-family: MuseoSans100, Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  display: block;
+  outline: 0;
+  padding-left: 42px;
+  width: 100%; }
+  .search-event-input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: inherit;
+    opacity: 1; }
+  .search-event-input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: inherit;
+    opacity: 1; }
+  .search-event-input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: inherit;
+    opacity: 1; }
+  .search-event-input:-moz-placeholder {
+    /* Firefox 18- */
+    color: inherit;
+    opacity: 1; }
+
+.event-preview {
+  display: block;
+  overflow: hidden;
+  position: relative; }
+
+.event-preview-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100% !important; }
+
+.event-preview-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .event-preview-caption h1, .event-preview-caption h2 {
+    color: #fff;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .event-preview-caption h1 {
+    font-family: MuseoSans500, Verdana, Geneva, sans-serif;
+    font-size: 34px; }
+  .event-preview-caption h2 {
+    font-size: 16px; }
 
 .content-banner {
   box-shadow: inset 0 -50px 50px 0 rgba(0, 0, 0, 0.25);
@@ -126,6 +187,7 @@ body {
 
 .content-banner-image {
   display: block;
+  width: 100%;
   height: auto;
   max-width: 100% !important;
   position: relative;
@@ -179,11 +241,12 @@ body {
   .footer p {
     color: #465769;
     font-size: 12px;
-    line-height: 1.2; }
+    line-height: 1.4; }
     .footer p a {
       color: inherit; }
   .footer p:first-child {
     font-size: 14px;
+    line-height: normal;
     margin-bottom: 25px; }
 
 .slideout-menu {
@@ -193,7 +256,7 @@ body {
   bottom: 0;
   right: 0;
   z-index: 0;
-  width: 256px;
+  width: 281px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none; }
