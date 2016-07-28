@@ -1,5 +1,30 @@
 @import 'reset';
 
+// font-face
+@font-face{ 
+  font-family: 'MuseoSans100';
+  src: url('../font/museosans-100-webfont.eot');
+  src: url('../font/museosans-100-webfont.eot?iefix') format('eot'),
+       url('../font/museosans-100-webfont.woff2') format('woff2'),
+       url('../font/museosans-100-webfont.woff') format('woff'),
+       url('../font/museosans-100-webfont.ttf') format('truetype'),
+       url('../font/museosans-100-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{ 
+  font-family: 'MuseoSans500';
+  src: url('../font/museosans-500-webfont.eot');
+  src: url('../font/museosans-500-webfont.eot?iefix') format('eot'),
+       url('../font/museosans-500-webfont.woff2') format('woff2'),
+       url('../font/museosans-500-webfont.woff') format('woff'),
+       url('../font/museosans-500-webfont.ttf') format('truetype'),
+       url('../font/museosans-500-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // box-sizing for everyone!
 html {
   box-sizing: border-box;
@@ -10,6 +35,8 @@ html {
 }
 
 html, body {
+  font-family: MuseoSans100, Verdana, Geneva, sans-serif;
+  font-size: 12px;
   height: 100%;
   margin: 0; padding: 0;  /* to avoid scrollbars */
   -webkit-text-size-adjust: none;
@@ -157,7 +184,8 @@ body {
 
   p {
     color: #465769;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.2;
 
     a {
       color: inherit;
@@ -165,6 +193,7 @@ body {
   }
 
   p:first-child {
+    font-size: 14px;
     margin-bottom: 25px;
   }
 }
