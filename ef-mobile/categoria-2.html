@@ -7,9 +7,28 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container"> 
+    <nav id="menu" class="menu">
+      <div class="menu-content">
+        <ul class="menu-list">
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="#">Cómo comprar</a></li>
+          <li><a href="#">Cómo vender</a></li>
+          <li><a href="#">Ventas Corporativas</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Contáctenos</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <p class="slogan">Made in with <i class="heart">❤</i> for fans!</p>
+      </div>
+      <footer class="menu-footer">
+        <p>Copyright 2014 EntradaFan - Todos los derechos reservados<br />
+        El uso de este sitio web implica la aceptación de los<br />
+        <a href="#">Términos y Condiciones</a> y de las <a href="#">Políticas de Privacidad</a></p>
+      </footer>
+    </nav>
+    <main id="panel" class="container"> 
       <header class="header">
-        <button class="hamburguer-button"></button>
+        <button class="hamburguer-button js-slideout-toggle"></button>
         <h1><img src="img/entradafan-logo.png" alt="Entrada Fan Logo" width="" height="" /></h1>
       </header>
       <div class="content">
@@ -116,6 +135,29 @@
         <p>2016 Entrada Fan. Todos los derechos reservados.</p>
         <p>El uso del sitio implica la aceptación de los <a href="#">términos y condiciones</a> y de las <a href="#">políticas de provacidad</a>.</p>
       </footer>
-    </div>
+    </main>
+    <script src="js/slideout.min.js"></script>
+    <script>
+
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 281,
+        'tolerance': 70
+      });
+
+      window.onload = function() {
+
+        document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+          slideout.toggle();
+        });
+
+        document.querySelector('.menu').addEventListener('click', function(eve) {
+          if (eve.target.nodeName === 'A') { slideout.close(); }
+        });
+        
+      };
+
+    </script>
   </body>
 </html>

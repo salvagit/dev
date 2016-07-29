@@ -87,6 +87,51 @@ body {
 .content {
   flex: 1; }
 
+.menu {
+  background-color: #2b333d;
+  display: flex;
+  /* use the flex model */
+  min-height: 100%;
+  flex-direction: column;
+  /* learn more: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */ }
+  .menu .slogan {
+    color: #fff;
+    font-size: 14px;
+    padding: 30px 0;
+    text-align: center; }
+  .menu .heart {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #c0392b;
+    text-decoration: none; }
+
+.menu-content {
+  flex: 1; }
+
+.menu-list {
+  color: #fff;
+  font-size: 16px; }
+  .menu-list li {
+    border-bottom: 1px dashed #4f6071;
+    display: block; }
+    .menu-list li a {
+      color: inherit;
+      display: block;
+      padding: 20px 30px;
+      text-decoration: none; }
+
+.menu-footer {
+  background-color: #242d36;
+  text-align: center;
+  padding: 15px; }
+  .menu-footer p {
+    color: #465768;
+    font-size: 10px;
+    line-height: 1.4; }
+    .menu-footer p a {
+      color: inherit; }
+
 .header {
   background-color: #eaebed;
   padding: 13px 0 9px 0;
@@ -179,6 +224,7 @@ body {
 
 .content-banner-title {
   color: #fff;
+  font-family: MuseoSans500, Verdana, Geneva, sans-serif;
   font-size: 24px;
   position: absolute;
   left: 15px;
@@ -195,6 +241,7 @@ body {
 
 .content-list .list-item {
   border-bottom: 1px solid #c4cccf;
+  color: #232d38;
   display: block;
   font-size: 16px;
   padding: 30px 15px;
@@ -214,29 +261,52 @@ body {
 
 .content-list .list-item-event {
   border-bottom: 1px solid #c4cccf;
+  color: #232d38;
   display: block;
-  padding: 30px 0;
+  padding: 25px 0;
   text-decoration: none; }
 
 .event-item {
-  width: 100%; }
+  line-height: 1.4; }
+  @media screen and (min-width: 414px) {
+    .event-item {
+      width: 100%; } }
   .event-item td {
     padding: 0 15px;
     vertical-align: middle; }
   .event-item .event-time {
+    font-size: 12px;
     text-align: center; }
+  .event-item .event-desc {
+    line-height: 1.2;
+    padding-left: 0; }
+    .event-item .event-desc h2, .event-item .event-desc p {
+      max-width: 202px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .event-item .event-desc h2 {
+      font-family: MuseoSans500, Verdana, Geneva, sans-serif;
+      font-size: 16px; }
+    .event-item .event-desc p {
+      font-size: 14px; }
   .event-item .event-price {
     display: none;
+    font-size: 12px;
+    line-height: 1.2;
+    padding-left: 0;
     text-align: right; }
     @media screen and (min-width: 414px) {
       .event-item .event-price {
         display: table-cell; } }
     .event-item .event-price span {
-      display: block; }
+      display: block;
+      font-family: MuseoSans500, Verdana, Geneva, sans-serif;
+      font-size: 16px; }
 
 .footer {
   background-color: #232d37;
-  padding: 25px 0;
+  padding: 25px 15px;
   text-align: center; }
   .footer p {
     color: #465769;
@@ -272,6 +342,6 @@ body {
   overflow: hidden; }
 
 .slideout-open .slideout-menu {
-  display: block; }
+  display: flex; }
 
 /*# sourceMappingURL=styles.css.map */
