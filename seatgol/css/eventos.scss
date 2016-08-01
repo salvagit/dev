@@ -1,0 +1,175 @@
+@import "mixins";
+@import "colors";
+
+.container {
+  .content {
+    .header-box {
+      // height: 300px!important;
+      background-position: bottom!important;
+        .header-wrapper {
+          .search {
+            padding-top: 180px!important;
+            margin: 0;
+            text-align: left!important;
+            h1 {
+              font-size: 30px;
+              margin-left: 14px;
+            }
+          }
+        }
+    }
+    .section {
+      width: 100%;
+      text-align: center;
+      .article {
+        // width: 1024px;
+        margin: 0 20px;
+        padding: 20px;
+        .top-menu {
+          color: $gray;
+          font-size: 17px;
+
+          p {
+            float: left;
+            margin-bottom: 0;
+          }
+
+          p:nth-child(1) {
+            height: 30px;
+            border-bottom: 2px solid #bdbdbd;
+          }
+          p:nth-child(3){
+            color: $green;
+          }
+
+          .separator {
+            color: #bdbdbd;
+            margin: 0 10px;
+          }
+        }
+
+        .top-menu-hr {
+          clear: both;
+          margin-top: 0;
+        }
+
+        h2 {
+          text-align: left;
+          color: $gray;
+          font-size: 18px;
+          padding-bottom: 15px;
+        }
+        .item-container {
+          margin-bottom: 20px;
+          .item {
+
+            height: auto;
+            min-height: 75px;
+
+            padding: 13px 13px 0;
+            margin-bottom: -1px;
+
+            border: 1px solid #e1e1e1;
+            .item-date {
+              // height: 100%;
+              margin: -14px -14px -1px;
+              border: 1px solid #e1e1e1;
+              background-color: #f6f4f5;
+              .row:nth-child(1) {
+                p {
+                  margin: 0;
+                  padding-top: 20px;
+                  font-size: 20px;
+                  font-weight: bolder;
+                }
+              }
+              .row:nth-child(2) {
+                p {
+                  margin: 0;
+                  padding-top: 5px;
+                  padding-bottom: 20px;
+                  font-size: 18px;
+                  font-weight: 100;
+                }
+              }
+            }
+            .item-location {
+
+              // padding-top: 12px;
+              text-align: left;
+
+              color: $gray;
+
+              font-size: 18px;
+              font-weight: 100;
+              .row:nth-child(1) {
+                img {
+                  width: 18px;
+                  margin: 0 10px 10px;
+                }
+                p {
+                  padding-left: 5px;
+                }
+                @media only screen and (max-width: 768px) {
+                  padding-top: 10px;
+                }
+              }
+              .row:nth-child(2), .row:nth-child(3) {
+                p {
+                  margin: 0;
+                  padding: 0 0 0 50px;
+                  font-weight: 100;
+                  font-size: 16px;
+                  @media only screen and (max-width: 768px) {
+                    padding: 0;
+                  }
+                }
+              }
+
+              @media only screen and (max-width: 768px) {
+                text-align: center;
+              }
+            }
+            .item-price {
+              padding-top: 25px;
+              color: $gray;
+              font-size: 16px;
+            }
+            .item-button {
+              float: right;
+              span {
+                color: #c53f3c
+              }
+              .button {
+                @include border-radius(25px);
+              }
+              @media only screen and (max-width: 768px) {
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .container {
+    .content {
+      .header-box {}
+      .section {
+        .article {
+
+          .item-container {
+            .item {
+              .item-text {}
+              .item-button {}
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.container .content .header-box {
+  background-position: bottom !important; }
+  .container .content .header-box .header-wrapper .search {
+    padding-top: 180px !important;
+    margin: 0;
+    text-align: left !important; }
+    .container .content .header-box .header-wrapper .search h1 {
+      font-size: 30px;
+      margin-left: 14px; }
+.container .content .section {
+  width: 100%;
+  text-align: center; }
+  .container .content .section .article {
+    margin: 0 20px;
+    padding: 20px; }
+    .container .content .section .article .top-menu {
+      color: #777;
+      font-size: 17px; }
+      .container .content .section .article .top-menu p {
+        float: left;
+        margin-bottom: 0; }
+      .container .content .section .article .top-menu p:nth-child(1) {
+        height: 30px;
+        border-bottom: 2px solid #bdbdbd; }
+      .container .content .section .article .top-menu p:nth-child(3) {
+        color: #32a49b; }
+      .container .content .section .article .top-menu .separator {
+        color: #bdbdbd;
+        margin: 0 10px; }
+    .container .content .section .article .top-menu-hr {
+      clear: both;
+      margin-top: 0; }
+    .container .content .section .article h2 {
+      text-align: left;
+      color: #777;
+      font-size: 18px;
+      padding-bottom: 15px; }
+    .container .content .section .article .item-container {
+      margin-bottom: 20px; }
+      .container .content .section .article .item-container .item {
+        height: auto;
+        min-height: 75px;
+        padding: 13px 13px 0;
+        margin-bottom: -1px;
+        border: 1px solid #e1e1e1; }
+        .container .content .section .article .item-container .item .item-date {
+          margin: -14px -14px -1px;
+          border: 1px solid #e1e1e1;
+          background-color: #f6f4f5; }
+          .container .content .section .article .item-container .item .item-date .row:nth-child(1) p {
+            margin: 0;
+            padding-top: 20px;
+            font-size: 20px;
+            font-weight: bolder; }
+          .container .content .section .article .item-container .item .item-date .row:nth-child(2) p {
+            margin: 0;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            font-size: 18px;
+            font-weight: 100; }
+        .container .content .section .article .item-container .item .item-location {
+          text-align: left;
+          color: #777;
+          font-size: 18px;
+          font-weight: 100; }
+          .container .content .section .article .item-container .item .item-location .row:nth-child(1) img {
+            width: 18px;
+            margin: 0 10px 10px; }
+          .container .content .section .article .item-container .item .item-location .row:nth-child(1) p {
+            padding-left: 5px; }
+          @media only screen and (max-width: 768px) {
+            .container .content .section .article .item-container .item .item-location .row:nth-child(1) {
+              padding-top: 10px; } }
+          .container .content .section .article .item-container .item .item-location .row:nth-child(2) p, .container .content .section .article .item-container .item .item-location .row:nth-child(3) p {
+            margin: 0;
+            padding: 0 0 0 50px;
+            font-weight: 100;
+            font-size: 16px; }
+            @media only screen and (max-width: 768px) {
+              .container .content .section .article .item-container .item .item-location .row:nth-child(2) p, .container .content .section .article .item-container .item .item-location .row:nth-child(3) p {
+                padding: 0; } }
+          @media only screen and (max-width: 768px) {
+            .container .content .section .article .item-container .item .item-location {
+              text-align: center; } }
+        .container .content .section .article .item-container .item .item-price {
+          padding-top: 25px;
+          color: #777;
+          font-size: 16px; }
+        .container .content .section .article .item-container .item .item-button {
+          float: right; }
+          .container .content .section .article .item-container .item .item-button span {
+            color: #c53f3c; }
+          .container .content .section .article .item-container .item .item-button .button {
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+            border-radius: 25px; }
+          @media only screen and (max-width: 768px) {
+            .container .content .section .article .item-container .item .item-button {
+              padding-bottom: 10px; } }
+
+/*# sourceMappingURL=eventos.css.map */
