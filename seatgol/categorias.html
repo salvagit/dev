@@ -101,7 +101,7 @@
                         </ul>
 
                         <div class="search-box navbar-form navbar-left">
-                          <form class="search-form" action="#" method="post">
+                          <form class="search-form typeahead" action="#" method="post">
                             <input type="text" name="q" value="" placeholder="Buscar Tickets ...">
                             <button type="submit" name="button"></button>
                           </form>
@@ -131,7 +131,7 @@
 
                 <div class="search">
                   <h1>Rock & Pop Tickets</h1>
-                  <ul class="breadcrumb">
+                  <ul id="breadcrumb" class="breadcrumb">
                       <li><a href="#">Home</a></li>
                       <li><a href="#">Conciertos</a></li>
                       <li class="active">Rock & Pop</li>
@@ -145,34 +145,45 @@
               <article class="article">
                 <h2>Proximos Recitales</h2>
 
-                <div class="item-container">
-                  <div class="item">
-                    <div class="item-wrapper">
-                      <p>Artista</p>
-                      <button type="button" name="button">Buscar Tickets</button>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="item-wrapper">
-                      <p>Artista</p>
-                      <button type="button" name="button">Buscar Tickets</button>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="item-wrapper">
-                      <p>Artista</p>
-                      <button type="button" name="button">Buscar Tickets</button>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="item-wrapper">
-                      <p>Artista</p>
-                      <button type="button" name="button">Buscar Tickets</button>
-                    </div>
-                  </div>
-                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-container">
 
-                <div class="banner hidden"></div>
+                  <div class="row item">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 item-text">
+                      <p>Artista</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-button">
+                      <button type="button" name="button" class="button">Buscar Tickets</button>
+                    </div>
+                  </div>
+
+                  <div class="row item">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 item-text">
+                      <p>Artista</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-button">
+                      <button type="button" name="button" class="button">Buscar Tickets</button>
+                    </div>
+                  </div>
+
+                  <div class="row item">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 item-text">
+                      <p>Artista</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-button">
+                      <button type="button" name="button" class="button">Buscar Tickets</button>
+                    </div>
+                  </div>
+
+                  <div class="row item">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 item-text">
+                      <p>Artista</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 item-button">
+                      <button type="button" name="button" class="button">Buscar Tickets</button>
+                    </div>
+                  </div>
+
+                </div>
 
               </article>
             </section>
@@ -208,11 +219,10 @@
         <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.jquery.js" charset="utf-8"></script>
         <script type="text/javascript">
           // get background.
-          document.querySelector('.header-box').classList.toggle('teatro')
+          document.querySelector('.header-box').classList.toggle('recitales')
           // search in header.
           document.querySelector('.top-wrapper').classList.add('search');
         </script>
         <script src="js/main.js"></script>
-
     </body>
 </html>
