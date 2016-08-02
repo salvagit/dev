@@ -18,7 +18,7 @@
   padding: 5px;
 }
 
-form { *:focus { outline: none; } }
+form, button { *:focus { outline: none; } }
 
 .search-form {
 
