@@ -141,6 +141,22 @@ form *:focus {
     #breadcrumb li a.active {
       font-weight: bolder; }
 
+#message-box {
+  border: .8px solid #e1e1e1;
+  background-color: #f6f4f5;
+  min-height: 80px;
+  padding-top: 20px;
+  padding-left: 15%;
+  margin: 0 auto; }
+  #message-box .icon {
+    width: 80px;
+    text-align: right; }
+  #message-box .message {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 20px;
+    color: #32a49b; }
+
 .container {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -356,6 +372,7 @@ form *:focus {
   .container footer {
     width: 100%;
     display: inline-block;
+    margin-top: 15px;
     border-top: 0.1px solid rgba(0, 0, 0, 0.2);
     color: #5f5f5f;
     text-align: center;

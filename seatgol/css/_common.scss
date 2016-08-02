@@ -152,3 +152,24 @@ form { *:focus { outline: none; } }
     }
   }
 }
+
+#message-box {
+  border: .8px solid #e1e1e1;
+  background-color: #f6f4f5;
+  min-height: 80px;
+  padding-top: 20px;
+  padding-left: 15%;
+  margin: 0 auto;
+  .icon {
+    width: 80px;
+    text-align: right;
+  }
+  .message {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 20px;
+    color: $green;
+  }
+  .wrapper {
+  }
+}
