@@ -516,8 +516,7 @@ form *:focus, button *:focus {
     .container .content .header-box .header-wrapper {
       width: auto; }
       .container .content .header-box .header-wrapper .search {
-        padding-top: 250px;
-        padding-bottom: 50px; }
+        padding-top: 250px; }
         .container .content .header-box .header-wrapper .search h2 {
           line-height: normal; }
   .container footer .wrapper-footer {
