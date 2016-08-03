@@ -300,18 +300,22 @@ form *:focus, button *:focus {
           -webkit-box-flex: 2;
           -moz-flex-grow: 2;
           flex-grow: 2; }
-          .container header .top .top-wrapper .search-box .search-form {
+          .container header .top .top-wrapper .search-box .search-form .twitter-typeahead {
+            width: auto;
             margin: 0 auto; }
-            .container header .top .top-wrapper .search-box .search-form input {
-              width: 70%;
+            .container header .top .top-wrapper .search-box .search-form .twitter-typeahead .typeahead {
+              margin-top: -7px;
+              height: 40px;
+              width: 100%;
               font-size: 16px; }
-            .container header .top .top-wrapper .search-box .search-form input, .container header .top .top-wrapper .search-box .search-form button {
-              height: 40px; }
-            .container header .top .top-wrapper .search-box .search-form button {
-              width: 20%; }
-              .container header .top .top-wrapper .search-box .search-form button::before {
-                width: 20px;
-                height: 20px; }
+            .container header .top .top-wrapper .search-box .search-form .twitter-typeahead .tt-menu {
+              width: 250px; }
+          .container header .top .top-wrapper .search-box .search-form button {
+            width: 20%;
+            height: 40px; }
+            .container header .top .top-wrapper .search-box .search-form button::before {
+              width: 20px;
+              height: 20px; }
         .container header .top .top-wrapper.search .search-box {
           display: block; }
         .container header .top .top-wrapper .contacto {

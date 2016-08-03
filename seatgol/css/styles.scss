@@ -168,22 +168,32 @@ $wrapper-size: 1135px;
           @include flex-grow(2);
 
           .search-form {
-            margin: 0 auto;
-            input {
-              width: 70%;
-              font-size: 16px;
+
+            .twitter-typeahead {
+              width: auto;
+              margin: 0 auto;
+              .typeahead {
+                margin-top: -7px;
+                height: 40px;
+                width: 100%;
+                font-size: 16px;
+              }
+              .tt-menu {
+                width: 250px;
+              }
             }
-            input, button {
-              height: 40px;
-            }
+
             button {
               width: 20%;
+              height: 40px;
               &::before {
                 width: 20px;
                 height: 20px;
               }
             }
+
           }
+
         }
 
         &.search {

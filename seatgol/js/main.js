@@ -41,7 +41,10 @@ var Main = {
       name: 'artists',
       source: substringMatcher(artists)
     });
+  },
 
+  addNavSearch: function () {
+    document.querySelector('.top-wrapper').classList.add('search');
   }
 };
 

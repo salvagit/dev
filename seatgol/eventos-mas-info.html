@@ -102,7 +102,7 @@
 
                         <div class="search-box navbar-form navbar-left">
                           <form class="search-form typeahead" action="#" method="post">
-                            <input type="text" name="q" value="" placeholder="Buscar Tickets ...">
+                            <input type="text" class="typeahead" name="q" placeholder="Buscar Tickets ...">
                             <button type="submit" name="button"></button>
                           </form>
                         </div>
@@ -200,12 +200,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.jquery.js" charset="utf-8"></script>
+        <script src="js/main.js"></script>
         <script type="text/javascript">
           // get background.
           document.querySelector('.header-box').classList.toggle('recitales')
           // search in header.
-          document.querySelector('.top-wrapper').classList.add('search');
+          Main.addNavSearch();
         </script>
-        <script src="js/main.js"></script>
     </body>
 </html>
