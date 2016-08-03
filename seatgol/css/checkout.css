@@ -7,10 +7,10 @@
     width: 1135px;
     margin: 0 auto;
     padding: 30px; }
-    .container .content .content-wrapper .first-column, .container .content .content-wrapper second-column {
-      padding: 20px; }
     .container .content .content-wrapper .row {
       margin-bottom: 20px; }
+    .container .content .content-wrapper .first-column, .container .content .content-wrapper second-column {
+      padding: 20px; }
     .container .content .content-wrapper .second-column {
       border: 1px solid #cacaca; }
       .container .content .content-wrapper .second-column .resumen-container {
