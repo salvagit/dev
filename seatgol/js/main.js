@@ -45,7 +45,15 @@ var Main = {
 
   addNavSearch: function () {
     document.querySelector('.top-wrapper').classList.add('search');
+  },
+
+  hideNavContent: function () {
+    document.querySelector('.topNav').classList.add('hidden');
+    document.querySelector('.search-box').classList.add('hidden');
+    document.querySelector('.contacto').classList.add('hidden');
+    document.querySelector('.navbar-toggle').classList.add('hidden');
   }
+
 };
 
 (function () {

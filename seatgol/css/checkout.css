@@ -4,15 +4,71 @@
 .container .content {
   margin-top: 50px; }
   .container .content .content-wrapper {
-    width: 1135px;
+    width: 1140px;
     margin: 0 auto;
     padding: 30px; }
     .container .content .content-wrapper .row {
       margin-bottom: 20px; }
-    .container .content .content-wrapper .first-column, .container .content .content-wrapper second-column {
+    .container .content .content-wrapper .first-column, .container .content .content-wrapper .second-column {
       padding: 20px; }
     .container .content .content-wrapper .first-column {
-      colo: #393939; }
+      color: #393939; }
+      .container .content .content-wrapper .first-column .row .pay-row {
+        width: 100%;
+        height: 80px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -moz-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1; }
+        .container .content .content-wrapper .first-column .row .pay-row.selected {
+          background-color: #f6f4f5; }
+        .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper {
+          width: 100%; }
+          .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .check-box input {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%; }
+          .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cuotas-box {
+            font-size: 32px;
+            font-weight: bolder; }
+          .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .no-tax-box {
+            width: 70px;
+            border: 1px solid #31a39b;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+            border-radius: 2px;
+            text-align: center; }
+            .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .no-tax-box .no-tax-box-wrapper .row {
+              margin-top: 0;
+              margin-bottom: 0; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .no-tax-box .no-tax-box-wrapper .row p {
+                margin-bottom: 0; }
+            .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .no-tax-box .no-tax-box-wrapper .row:nth-child(1) {
+              background-color: #31a39b;
+              border: 0; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .no-tax-box .no-tax-box-wrapper .row:nth-child(1) p {
+                color: white; }
+            .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .no-tax-box .no-tax-box-wrapper .row:nth-child(2) p {
+              font-size: 13px; }
+          .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box {
+            text-align: right; }
+            .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card {
+              width: 50px;
+              height: 30px;
+              float: right;
+              border: 1px solid black; }
       .container .content .content-wrapper .first-column .row:nth-child(1) {
         border: 1px solid #e1e1e1;
         background-color: #f6f4f5; }
@@ -22,6 +78,9 @@
           margin: 10px 0 0 10px; }
           .container .content .content-wrapper .first-column .row:nth-child(1) .column-right h2 {
             font-size: 18px; }
+      @media only screen and (max-width: 1215px) {
+        .container .content .content-wrapper .first-column {
+          margin: 0; } }
     .container .content .content-wrapper .second-column {
       position: fixed;
       top: 130px;
@@ -30,10 +89,12 @@
       .container .content .content-wrapper .second-column .resumen-container {
         background-color: #f6f4f5;
         height: auto;
-        margin: 0 -15px;
-        padding-bottom: -15px; }
+        margin: 0 -15px; }
         .container .content .content-wrapper .second-column .resumen-container .resumen-wrapper {
           margin: 0 15px; }
+        @media only screen and (max-width: 768px) {
+          .container .content .content-wrapper .second-column .resumen-container {
+            margin: 0; } }
       .container .content .content-wrapper .second-column.on-footer {
         top: auto;
         bottom: 540px; }
@@ -46,13 +107,39 @@
           top: auto;
           bottom: auto;
           left: auto; } }
-  @media only screen and (max-width: 1215px) {
+    @media only screen and (max-width: 768px) {
+      .container .content .content-wrapper {
+        margin: 0;
+        padding: 0; } }
+  @media only screen and (max-width: 768px) {
     .container .content {
-      margin-top: 60px; } }
-  @media only screen and (max-width: 369px) {
-    .container .content {
-      margin-top: 120px; } }
+      margin-top: 79px;
+      margin-left: 0;
+      margin-right: 0; } }
 
+@media only screen and (max-width: 768px) {
+  .container .content .content-wrapper .row {
+    margin-left: 0;
+    margin-right: 0; }
+    .container .content .content-wrapper .row div {
+      padding-left: 1px;
+      padding-right: 1px; }
+  .container .content .content-wrapper .first-column {
+    padding-left: 0;
+    padding-right: 0; }
+    .container .content .content-wrapper .first-column .row:nth-child(1) input {
+      margin-bottom: 5px; }
+    .container .content .content-wrapper .first-column .row:nth-child(1) label {
+      display: none; }
+    .container .content .content-wrapper .first-column .row:nth-child(1) div:nth-child(1) img {
+      width: 100%; }
+    .container .content .content-wrapper .first-column .row:nth-child(1):nth-child(1) .column-left, .container .content .content-wrapper .first-column .row:nth-child(1):nth-child(1) .column-right {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0; }
+    .container .content .content-wrapper .first-column .row:nth-child(2) div {
+      width: 100px; } }
 @media only screen and (max-width: 1135px) {
   .container .content .content-wrapper {
     width: auto; } }
