@@ -24,6 +24,7 @@
         left: 65%;
 
         border: 1px solid #cacaca;
+
         .resumen-container {
           background-color: #f6f4f5;
           height: auto;
@@ -37,15 +38,16 @@
         &.on-footer {
           top: auto;
           bottom: 540px;
-          @media only screen and (max-width: 992px) {
-            position: relative;
-            bottom: auto;
-            left: auto;
-            top: auto;
-          }
           @media only screen and (min-width: 1215px) {
             bottom: 340px;
           }
+        }
+
+        @media only screen and (max-width: 991px) {
+          position: relative;
+          top: auto;
+          bottom: auto;
+          left: auto;
         }
       }
     }
