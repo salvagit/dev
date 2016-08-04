@@ -28,13 +28,13 @@
         bottom: 540px; }
         @media only screen and (max-width: 992px) {
           .container .content .content-wrapper .second-column.on-footer {
-            bottom: auto; } }
-      @media only screen and (max-width: 992px) {
-        .container .content .content-wrapper .second-column {
-          position: relative;
-          bottom: auto;
-          left: auto;
-          top: auto; } }
+            position: relative;
+            bottom: auto;
+            left: auto;
+            top: auto; } }
+        @media only screen and (min-width: 1215px) {
+          .container .content .content-wrapper .second-column.on-footer {
+            bottom: 340px; } }
   @media only screen and (max-width: 1215px) {
     .container .content {
       margin-top: 60px; } }
