@@ -81,22 +81,20 @@
           .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box {
             height: 30px;
             margin-top: 3px;
-            overflow: hidden; }
+            overflow: hidden;
+            float: right; }
             .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card {
               width: 50px;
               height: 30px;
               margin-left: 5px;
               float: right;
               border: 1px solid black; }
-            .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box:not(.adjust) {
-              padding-right: 0px; }
             @media only screen and (max-width: 1080px) {
               .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box.adjust {
                 width: 74%; } }
             @media only screen and (max-width: 726px) {
               .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box.adjust {
-                width: 61%;
-                padding-right: 0; } }
+                width: 61%; } }
       .container .content .content-wrapper .first-column .artist-container {
         border: 1px solid #e1e1e1;
         background-color: #f6f4f5; }
