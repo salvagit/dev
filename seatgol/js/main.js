@@ -30,7 +30,7 @@ var Main = {
       };
     };
 
-    var artists = ['Golden States', 'Justin Biber', 'Coldplay'];
+    var artists = ['Golden States', 'Justin Bieber', 'Coldplay'];
 
     $('.typeahead').typeahead({
       hint: true,
