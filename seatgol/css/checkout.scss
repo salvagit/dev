@@ -34,15 +34,19 @@
           }
         }
 
+        &.on-footer {
+          top: auto;
+          bottom: 540px;
+          @media only screen and (max-width: 992px) {
+            bottom: auto;
+          }
+        }
+
         @media only screen and (max-width: 992px) {
           position: relative;;
           bottom: auto;
           left: auto;
           top: auto;
-        }
-        @media only screen and (max-height: 900px) {
-          // top: auto;
-          // bottom: 350px;
         }
       }
     }

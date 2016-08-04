@@ -370,6 +370,19 @@
           Main.addNavSearch();
           // blue header.
           document.querySelector('.top').classList.add('blue-background');
+
+          // scroll fix
+          window.onscroll = function () {
+            if (window.innerHeight < 930 &&
+                window.innerWidth < 1215) {
+              console.log(window.innerHeight, window.scrollY);
+              if (window.scrollY >= 450) {
+                document.querySelector('.second-column').classList.add('on-footer');
+              } else {
+                document.querySelector('.second-column').classList.remove('on-footer');
+              }
+            }
+          }
         </script>
 
     </body>

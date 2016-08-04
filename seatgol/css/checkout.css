@@ -23,6 +23,12 @@
         padding-bottom: -15px; }
         .container .content .content-wrapper .second-column .resumen-container .resumen-wrapper {
           margin: 0 15px; }
+      .container .content .content-wrapper .second-column.on-footer {
+        top: auto;
+        bottom: 540px; }
+        @media only screen and (max-width: 992px) {
+          .container .content .content-wrapper .second-column.on-footer {
+            bottom: auto; } }
       @media only screen and (max-width: 992px) {
         .container .content .content-wrapper .second-column {
           position: relative;
