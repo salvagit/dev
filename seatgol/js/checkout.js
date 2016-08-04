@@ -50,6 +50,5 @@ for (var i = 0; i < payItem.length; i++) {
       payItem[i].classList.remove('selected');
     }
     this.classList.add('selected');
-    console.log(this);
   });
 }

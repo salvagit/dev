@@ -98,8 +98,8 @@
                 }
               }
               .cards-box {
-                margin-top: 3px;
                 height: 30px;
+                margin-top: 3px;
                 overflow: hidden;
                 .card {
                   width: 50px;
@@ -108,12 +108,16 @@
                   float: right;
                   border: 1px solid black;
                 }
+                &:not(.adjust) {
+                  padding-right: 0px;
+                }
                 &.adjust {
                   @media only screen and (max-width:1080px) {
                     width: 74%;
                   }
-                  @media only screen and (max-width:768px) {
-                    width: 56%;
+                  @media only screen and (max-width:726px) {
+                    width: 61%;
+                    padding-right: 0;
                   }
                 }
               }
@@ -133,6 +137,9 @@
             h2 {
               font-size: 18px;
             }
+          }
+          @media only screen and (max-width: 1215px) {
+              margin-right: -5px;
           }
         }
         @media only screen and (max-width: 1215px) {
@@ -227,6 +234,7 @@
           top: auto;
           bottom: auto;
           left: auto;
+          width: 100%;
         }
       }
       @media only screen and (max-width: 768px) {
@@ -318,9 +326,6 @@
     .content {
       .content-wrapper {
         width: auto;
-        .second-column {
-          width: 100%;
-        }
       }
     }
   }
