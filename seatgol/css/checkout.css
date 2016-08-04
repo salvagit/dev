@@ -11,6 +11,17 @@
       margin-bottom: 20px; }
     .container .content .content-wrapper .first-column, .container .content .content-wrapper second-column {
       padding: 20px; }
+    .container .content .content-wrapper .first-column {
+      colo: #393939; }
+      .container .content .content-wrapper .first-column .row:nth-child(1) {
+        border: 1px solid #e1e1e1;
+        background-color: #f6f4f5; }
+        .container .content .content-wrapper .first-column .row:nth-child(1) .column-left {
+          margin-left: -15px; }
+        .container .content .content-wrapper .first-column .row:nth-child(1) .column-right {
+          margin: 10px 0 0 10px; }
+          .container .content .content-wrapper .first-column .row:nth-child(1) .column-right h2 {
+            font-size: 18px; }
     .container .content .content-wrapper .second-column {
       position: fixed;
       top: 130px;

@@ -134,12 +134,16 @@
 
                   <div class="row">
 
-                    <div class="col-xs-12 col-sm-12 col-md-8">
+                    <div class="col-md-5 col-md-5 col-sm-5 col-xs-5 column-left">
+                      <img src="img/ticket_image.png" alt="" />
                     </div>
-                  </div>
 
-                  <h2>Coldplay</h2>
-                  <p>Jun 12 Miercoles 20:00</p>
+                    <div class="col-md-7 col-md-7 col-sm-7 col-xs-7 column-right">
+                      <h2>Coldplay</h2>
+                      <p>Jun 12 Miercoles 20:00</p>
+                    </div>
+
+                  </div>
 
                   <hr>
 
@@ -376,7 +380,7 @@
             if (window.innerHeight < 930 &&
                 window.innerWidth >= 992) {
               console.log(window.innerHeight, window.scrollY);
-              if (window.scrollY >= 450) {
+              if (window.scrollY >= 600) {
                 document.querySelector('.second-column').classList.add('on-footer');
               } else {
                 document.querySelector('.second-column').classList.remove('on-footer');

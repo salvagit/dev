@@ -16,7 +16,24 @@
       .first-column,second-column {
         padding: 20px;
       }
-      .first-column {}
+      .first-column {
+        colo: #393939;
+        .row:nth-child(1){
+          border: 1px solid #e1e1e1;
+          background-color: #f6f4f5;
+          .column-left {
+            margin-left: -15px;
+          }
+          .column-right {
+            margin: 10px 0 0 10px;
+            h2 {
+              font-size: 18px;
+            }
+            p {}
+          }
+        }
+        .row:nth-child(2){}
+      }
       .second-column {
 
         position: fixed;
