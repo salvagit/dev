@@ -79,22 +79,61 @@
           .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .tax-box .tax-box-wrapper p {
             color: #32a49b; }
           .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box {
-            height: 30px;
+            height: 36px;
             margin-top: 3px;
             overflow: hidden;
             float: right; }
             .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card {
-              width: 50px;
-              height: 30px;
+              width: 58px;
+              height: 36px;
               margin-left: 5px;
-              float: right;
-              border: 1px solid black; }
+              float: right; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.american {
+                background: url("../img/tarjetas/american.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.argencard {
+                background: url("../img/tarjetas/argencard.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.cabal {
+                background: url("../img/tarjetas/cabal.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.cencosud {
+                background: url("../img/tarjetas/cencosud.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.cmr {
+                background: url("../img/tarjetas/cmr.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.cordial {
+                background: url("../img/tarjetas/cordial.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.diners {
+                background: url("../img/tarjetas/diners.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.master {
+                background: url("../img/tarjetas/master.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.naranja {
+                background: url("../img/tarjetas/naranja.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.nativa {
+                background: url("../img/tarjetas/nativa.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.shopping {
+                background: url("../img/tarjetas/shopping.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.varias {
+                background: url("../img/tarjetas/varias.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.visa {
+                background: url("../img/tarjetas/visa.png") center center; }
+              .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box .card.varias {
+                background: url("../img/tarjetas/varias.png") center center; }
             @media only screen and (max-width: 1080px) {
               .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box.adjust {
-                width: 74%; } }
+                width: 65%; } }
             @media only screen and (max-width: 726px) {
               .container .content .content-wrapper .first-column .row .pay-row .pay-row-wrapper .cards-box.adjust {
-                width: 61%; } }
+                width: 50%; } }
+        .container .content .content-wrapper .first-column .row .pay-row.depocito {
+          overflow: hidden; }
+          .container .content .content-wrapper .first-column .row .pay-row.depocito .row {
+            margin: 0;
+            font-size: 0; }
+          .container .content .content-wrapper .first-column .row .pay-row.depocito p {
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 0; }
+          .container .content .content-wrapper .first-column .row .pay-row.depocito span {
+            font-size: 12px;
+            margin-bottom: 0; }
       .container .content .content-wrapper .first-column .artist-container {
         border: 1px solid #e1e1e1;
         background-color: #f6f4f5; }

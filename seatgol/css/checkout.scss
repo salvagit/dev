@@ -98,28 +98,60 @@
                 }
               }
               .cards-box {
-                height: 30px;
+                height: 36px;
                 margin-top: 3px;
                 overflow: hidden;
                 float: right;
                 .card {
-                  width: 50px;
-                  height: 30px;
+                  width: 58px;
+                  height: 36px;
                   margin-left: 5px;
                   float: right;
-                  border: 1px solid black;
+                  &.american {background: url('../img/tarjetas/american.png') center center;}
+                  &.argencard {background: url('../img/tarjetas/argencard.png') center center;}
+                  &.cabal {background: url('../img/tarjetas/cabal.png') center center;}
+                  &.cencosud {background: url('../img/tarjetas/cencosud.png') center center;}
+                  &.cmr {background: url('../img/tarjetas/cmr.png') center center;}
+                  &.cordial {background: url('../img/tarjetas/cordial.png') center center;}
+                  &.diners {background: url('../img/tarjetas/diners.png') center center;}
+                  &.master {background: url('../img/tarjetas/master.png') center center;}
+                  &.naranja {background: url('../img/tarjetas/naranja.png') center center;}
+                  &.nativa {background: url('../img/tarjetas/nativa.png') center center;}
+                  &.shopping {background: url('../img/tarjetas/shopping.png') center center;}
+                  &.varias {background: url('../img/tarjetas/varias.png') center center;}
+                  &.visa {background: url('../img/tarjetas/visa.png') center center;}
+                  &.varias {background: url('../img/tarjetas/varias.png') center center;}
                 }
 
                 &.adjust {
                   @media only screen and (max-width:1080px) {
-                    width: 74%;
+                    width: 65%;
                   }
                   @media only screen and (max-width:726px) {
-                    width: 61%;
+                    width: 50%;
                   }
                 }
+
               }
             }
+
+            &.depocito {
+              overflow: hidden;
+              .row {
+                margin: 0;
+                font-size: 0;
+              }
+              p {
+                font-weight: bolder;
+                font-size: 20px;
+                margin-bottom: 0;
+              }
+              span {
+                font-size: 12px;
+                margin-bottom: 0;
+              }
+            }
+
           }
         }
 
