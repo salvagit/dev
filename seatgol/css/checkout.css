@@ -140,9 +140,15 @@
         .container .content .content-wrapper .first-column .artist-container .column-left {
           margin-left: -15px; }
         .container .content .content-wrapper .first-column .artist-container .column-right {
-          margin: 10px 0 0 10px; }
+          padding: 10px 0 0 40px; }
           .container .content .content-wrapper .first-column .artist-container .column-right h2 {
-            font-size: 18px; }
+            font-size: 32px;
+            margin-bottom: 0; }
+          .container .content .content-wrapper .first-column .artist-container .column-right p {
+            font-size: 20px; }
+          @media only screen and (max-width: 768px) {
+            .container .content .content-wrapper .first-column .artist-container .column-right {
+              text-align: center; } }
         @media only screen and (max-width: 1215px) {
           .container .content .content-wrapper .first-column .artist-container {
             margin-right: -5px; } }

@@ -163,9 +163,16 @@
             margin-left: -15px;
           }
           .column-right {
-            margin: 10px 0 0 10px;
+            padding: 10px 0 0 40px;
             h2 {
-              font-size: 18px;
+              font-size: 32px;
+              margin-bottom: 0;
+            }
+            p {
+              font-size: 20px;
+            }
+            @media only screen and (max-width: 768px) {
+              text-align: center;
             }
           }
           @media only screen and (max-width: 1215px) {
