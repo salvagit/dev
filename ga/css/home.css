@@ -8,23 +8,23 @@
   .menu-container #flaps .flap.ceo {
     margin-top: 40px;
     height: 100px;
-    background: url("/img/flaps/blue_msj_ceo.png"); }
+    background: url("../img/flaps/blue_msj_ceo.png"); }
   .menu-container #flaps .flap.vision {
     height: 90px;
-    background: url("/img/flaps/green_vision.png"); }
+    background: url("../img/flaps/green_vision.png"); }
   .menu-container #flaps .flap.values {
-    background: url("/img/flaps/orange_values.png"); }
+    background: url("../img/flaps/orange_values.png"); }
   .menu-container #flaps .flap.transparency {
     height: 100px;
-    background: url("/img/flaps/violet_transparency.png"); }
+    background: url("../img/flaps/violet_transparency.png"); }
   .menu-container #flaps .flap.code {
-    background: url("/img/flaps/yellow_code.png"); }
+    background: url("../img/flaps/yellow_code.png"); }
   .menu-container #flaps .flap:hover {
     transform: translateX(-70%); }
 
 body {
   background-color: #e8e9e9 !important;
-  background-image: url("/img/globe.png"), url("/img/persons.png"), url("/img/cloud.png");
+  background-image: url("../img/globe.png"), url("../img/persons.png"), url("../img/cloud.png");
   background-repeat: no-repeat;
   background-position: top left, bottom left, bottom right; }
 
@@ -33,7 +33,7 @@ body {
   margin: 0 auto; }
 
 .header {
-  background: url("/img/head.png") center no-repeat;
+  background: url("../img/head.png") center no-repeat;
   height: 100px; }
 
 .book {
@@ -50,6 +50,6 @@ body {
     margin: 0 auto;
     width: 250px;
     height: 55px;
-    background: url("/img/spirit_logo.png") no-repeat; }
+    background: url("../img/spirit_logo.png") no-repeat; }
 
 /*# sourceMappingURL=home.css.map */
