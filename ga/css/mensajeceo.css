@@ -34,38 +34,41 @@ a:hover {
   .menu-container #flaps .flap:hover {
     transform: translateX(-70%); }
 
+@font-face {
+  font-family: 'HelveticaKVAFont';
+  src: url("../fonts/HelveticaKVAFont.eot");
+  src: local("../fonts/HelveticaKVAFont"), url("../fonts/HelveticaKVAFont.woff") format("woff"), url("../fonts/HelveticaKVAFont.ttf") format("truetype"); }
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_61539">Text with this font applied</p> */
 body {
-  background-color: #e8e9e9 !important;
-  background-image: url("../img/globe.png"), url("../img/persons.png"), url("../img/cloud.png");
-  background-repeat: no-repeat;
-  background-position: top left, bottom left, bottom right; }
+  font-family: 'HelveticaKVAFont' !important; }
 
-#container {
-  width: 1000px;
-  margin: 0 auto; }
+body {
+  background: url("../img/resaltador.png") bottom no-repeat;
+  background-position: 115% 50vh;
+  background-size: 30%; }
 
-.header {
-  background: url("../img/head.png") center no-repeat;
-  height: 100px; }
+.title {
+  color: #304a83;
+  text-align: center; }
 
-.book {
-  position: relative;
-  height: 80vh;
-  margin: 0;
-  border: .4px solid gray;
-  background-color: white;
-  z-index: 9999;
-  text-align: center;
-  -webkit-box-shadow: 32px 11px 68px 3px rgba(0, 0, 0, 0.71);
-  -moz-box-shadow: 32px 11px 68px 3px rgba(0, 0, 0, 0.71);
-  box-shadow: 32px 11px 68px 3px rgba(0, 0, 0, 0.71);
-  border-right: 4px solid gray; }
-  .book h1 {
-    padding-top: 40vh; }
-  .book .logo {
-    margin: 0 auto;
-    width: 250px;
-    height: 55px;
-    background: url("../img/spirit_logo.png") no-repeat; }
+.signature {
+  margin-top: 20px;
+  text-align: center; }
+  .signature p {
+    display: inline-block; }
 
-/*# sourceMappingURL=home.css.map */
+.sub-title {
+  color: #4c4d4f;
+  margin-top: 40px;
+  text-align: center; }
+
+header {
+  font-weight: bolder;
+  text-align: center; }
+  header .arrow, header .pipe {
+    color: #818285;
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5em; }
+
+/*# sourceMappingURL=mensajeceo.css.map */

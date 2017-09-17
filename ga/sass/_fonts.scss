@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'HelveticaKVAFont';
+	src: url('../fonts/HelveticaKVAFont.eot');
+	src: local('../fonts/HelveticaKVAFont'), url('../fonts/HelveticaKVAFont.woff') format('woff'), url('../fonts/HelveticaKVAFont.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_61539">Text with this font applied</p> */
+body {
+	font-family: 'HelveticaKVAFont' !important;
+}
