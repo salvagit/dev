@@ -1,0 +1,51 @@
+@import 'global';
+
+body {
+    background: url('../img/valores_background.jpg') no-repeat;
+    background-position: 50% 70vh;
+}
+
+.letter {
+    width: 120px;
+    margin-left: -15px;
+    
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.5;
+
+    transition: all .5s;
+    
+    cursor: pointer;
+    
+    &:hover {
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+}
+
+.arrows_valores {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all .5s;
+    .arrow { 
+        opacity: 0;
+        margin: 0 8px;
+    }
+    .blue {  margin-left: 70px; }
+}
+.sub-title {
+    h4 {
+        font-size: 30px;
+    }
+}
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.title .text {
+    color: #4C4C4E;
+}

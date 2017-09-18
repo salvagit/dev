@@ -67,8 +67,44 @@ header {
     font-size: 1.5em; }
 
 body {
-  background: url("../img/resaltador.png") bottom no-repeat;
-  background-position: 115% 50vh;
-  background-size: 30%; }
+  background: url("../img/valores_background.jpg") no-repeat;
+  background-position: 50% 70vh; }
 
-/*# sourceMappingURL=mensajeceo.css.map */
+.letter {
+  width: 120px;
+  margin-left: -15px;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all .5s;
+  cursor: pointer; }
+  .letter:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    opacity: 1; }
+
+.arrows_valores {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all .5s; }
+  .arrows_valores .arrow {
+    opacity: 0;
+    margin: 0 8px; }
+  .arrows_valores .blue {
+    margin-left: 70px; }
+
+.sub-title h4 {
+  font-size: 30px; }
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px; }
+
+.title .text {
+  color: #4C4C4E; }
+
+/*# sourceMappingURL=valores.css.map */

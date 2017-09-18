@@ -1,41 +1,7 @@
-@import 'menu';
-@import 'fonts';
+@import 'global';
 
 body {
     background: url('../img/resaltador.png') bottom no-repeat;
     background-position: 115% 50vh;
     background-size: 30%;
 }
-
-.title {
-    color: #304a83;
-    text-align: center;
-}
-
-.signature {
-    margin-top: 20px;
-    text-align: center;
-    p {
-        display: inline-block;
-    }
-}
-
-.sub-title {
-    color: #4c4d4f;
-    margin-top: 40px;
-    text-align: center;
-}
-
-header {
-    font-weight: bolder;
-    text-align: center;
-    .arrow, .pipe {
-        color: #818285;
-        margin: 0;
-        display: inline-block;
-        font-size: 1.5em;
-    }
-    .left {}
-    .right {}
-}
-
