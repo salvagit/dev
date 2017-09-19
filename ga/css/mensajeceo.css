@@ -16,6 +16,8 @@ a:hover {
   justify-content: flex-end;
   color: white;
   padding-right: 5px; }
+  .menu-container #flaps .flap p {
+    opacity: 0; }
   .menu-container #flaps .flap.ceo {
     margin-top: 40px;
     height: 100px;
@@ -33,6 +35,8 @@ a:hover {
     transform: rotate("1"); }
   .menu-container #flaps .flap:hover {
     transform: translateX(-70%); }
+    .menu-container #flaps .flap:hover p {
+      opacity: 1; }
 
 @font-face {
   font-family: 'HelveticaKVAFont';

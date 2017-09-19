@@ -26,6 +26,8 @@ a:hover {
             color: white;
             padding-right: 5px;
 
+            p {opacity: 0;}
+
             &.ceo {
                 margin-top: 40px;
                 height: 100px;
@@ -49,6 +51,7 @@ a:hover {
             
             &:hover {
                 transform: translateX( -70% );
+                p {opacity: 1;}
             }
         }
     }
