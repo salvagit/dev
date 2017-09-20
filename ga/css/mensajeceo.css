@@ -39,13 +39,9 @@ a:hover {
       opacity: 1; }
 
 @font-face {
-  font-family: 'HelveticaKVAFont';
-  src: url("../fonts/HelveticaKVAFont.eot");
-  src: local("../fonts/HelveticaKVAFont"), url("../fonts/HelveticaKVAFont.woff") format("woff"), url("../fonts/HelveticaKVAFont.ttf") format("truetype"); }
-/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_61539">Text with this font applied</p> */
-body {
-  font-family: 'HelveticaKVAFont' !important; }
-
+  font-family: 'SensationsandQualities';
+  src: url("../fonts/SensationsandQualities.eot");
+  src: url("../fonts/SensationsandQualities.eot") format("embedded-opentype"), url("../fonts/SensationsandQualities.woff2") format("woff2"), url("../fonts/SensationsandQualities.woff") format("woff"), url("../fonts/SensationsandQualities.ttf") format("truetype"), url("../fonts/SensationsandQualities.svg#SensationsandQualities") format("svg"); }
 .title {
   color: #304a83;
   text-align: center; }
