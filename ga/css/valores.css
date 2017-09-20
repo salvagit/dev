@@ -54,8 +54,13 @@ a:hover {
 
 .sub-title {
   color: #4c4d4f;
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center; }
+  .sub-title h3 {
+    font-size: 2em; }
+
+.text {
+  margin-top: 20px; }
 
 header {
   font-weight: bolder;
@@ -65,10 +70,6 @@ header {
     margin: 0;
     display: inline-block;
     font-size: 1.5em; }
-
-body {
-  background: url("../img/valores_background.jpg") no-repeat;
-  background-position: 50% 70vh; }
 
 .letter {
   width: 120px;
@@ -106,5 +107,17 @@ body {
 
 .title .text {
   color: #4C4C4E; }
+
+.text {
+  text-align: center; }
+
+footer .postix {
+  background: url("../img/valores_background.png") no-repeat center;
+  width: 535px;
+  height: 232px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 263px); }
 
 /*# sourceMappingURL=valores.css.map */

@@ -1,9 +1,5 @@
 @import 'global';
 
-body {
-    background: url('../img/valores_background.jpg') no-repeat;
-    background-position: 50% 70vh;
-}
 
 .letter {
     width: 120px;
@@ -12,7 +8,7 @@ body {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     opacity: 0.5;
-
+    
     transition: all .5s;
     
     cursor: pointer;
@@ -48,4 +44,20 @@ body {
 
 .title .text {
     color: #4C4C4E;
+}
+
+.text {
+    text-align: center;
+}
+
+footer {
+    .postix {
+        background: url('../img/valores_background.png') no-repeat center;
+        width: 535px;
+        height: 232px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 263px);
+    }
 }

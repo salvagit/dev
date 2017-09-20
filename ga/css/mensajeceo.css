@@ -54,8 +54,13 @@ a:hover {
 
 .sub-title {
   color: #4c4d4f;
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center; }
+  .sub-title h3 {
+    font-size: 2em; }
+
+.text {
+  margin-top: 20px; }
 
 header {
   font-weight: bolder;
