@@ -1,0 +1,116 @@
+a:hover {
+  text-decoration: none !important; }
+
+.menu-container #flaps .flap {
+  min-height: 70px;
+  list-style-type: none;
+  margin-bottom: 15px;
+  transition: all .5s;
+  transform: translateX(-100%);
+  background-position: right;
+  -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  padding-right: 5px; }
+  .menu-container #flaps .flap p {
+    opacity: 0; }
+  .menu-container #flaps .flap.ceo {
+    margin-top: 40px;
+    height: 100px;
+    background: url("../img/flaps/blue_msj_ceo.png"); }
+  .menu-container #flaps .flap.vision {
+    height: 90px;
+    background: url("../img/flaps/green_vision.png"); }
+  .menu-container #flaps .flap.values {
+    background: url("../img/flaps/orange_values.png"); }
+  .menu-container #flaps .flap.transparency {
+    height: 100px;
+    background: url("../img/flaps/violet_transparency.png"); }
+  .menu-container #flaps .flap.code {
+    background: url("../img/flaps/yellow_code.png");
+    transform: rotate("1"); }
+  .menu-container #flaps .flap:hover {
+    transform: translateX(-70%); }
+    .menu-container #flaps .flap:hover p {
+      opacity: 1; }
+
+@font-face {
+  font-family: 'SensationsandQualities';
+  src: url("../fonts/SensationsandQualities.eot");
+  src: url("../fonts/SensationsandQualities.eot") format("embedded-opentype"), url("../fonts/SensationsandQualities.woff2") format("woff2"), url("../fonts/SensationsandQualities.woff") format("woff"), url("../fonts/SensationsandQualities.ttf") format("truetype"), url("../fonts/SensationsandQualities.svg#SensationsandQualities") format("svg"); }
+.title {
+  color: #304a83;
+  text-align: center; }
+
+.signature {
+  margin-top: 20px;
+  text-align: center; }
+  .signature p {
+    display: inline-block; }
+
+.sub-title {
+  color: #4c4d4f;
+  margin-top: 50px;
+  text-align: center; }
+  .sub-title h3 {
+    font-size: 2em; }
+
+.text {
+  margin-top: 20px; }
+
+header {
+  font-weight: bolder;
+  text-align: center; }
+  header .arrow, header .pipe {
+    color: #818285;
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5em; }
+
+.sub-title {
+  font-size: 25px;
+  max-width: 580px;
+  margin: 25px auto; }
+
+.title {
+  max-width: 580px;
+  margin: 0 auto; }
+
+.text {
+  max-width: 580px;
+  margin: 20px auto 0; }
+
+.arrow {
+  text-align: right; }
+  .arrow svg {
+    transform: scaleX(-1); }
+
+aside {
+  overflow: hidden;
+  margin-top: 10%; }
+  aside .postix {
+    height: 232px;
+    margin: 0 auto; }
+    aside .postix.socios {
+      background: url("../img/cloud.png") no-repeat center;
+      width: 250px; }
+    aside .postix.puertas {
+      background: url("../img/persons.png") no-repeat center;
+      transform: rotate(-50deg);
+      width: 194px; }
+
+footer .postix {
+  background: url("../img/persons.png") no-repeat center;
+  width: 535px;
+  height: 232px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 263px);
+  transform: rotate(-23deg); }
+
+/*# sourceMappingURL=transparencia.css.map */

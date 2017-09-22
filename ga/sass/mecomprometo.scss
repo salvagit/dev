@@ -1,0 +1,27 @@
+@import 'global';
+
+.sub-title, .text {
+    color: #4C4C4E;
+}
+
+.sub-title {
+    p{padding:0;}
+    font-size: 1.2em;
+}
+
+.text {
+    font-size: 1.7em;
+    text-align: center;
+}
+
+footer {
+    .postix {
+        background: url('../img/orgullosamente-postix.png') no-repeat center;
+        width: 264px;
+        height: 307px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 153px);
+    }
+}
