@@ -2,6 +2,7 @@ a:hover {
   text-decoration: none !important; }
 
 .menu-container #flaps .flap {
+  min-width: 158px;
   min-height: 70px;
   list-style-type: none;
   margin-bottom: 15px;
@@ -86,6 +87,56 @@ header {
 
 .opa0 {
   opacity: 0; }
+
+.pink-highlight {
+  text-shadow: 3px 0px 3px #F6ADCD, -3px 0px 3px #F6ADCD, 6px 0px 6px #F6ADCD, -6px 0px 6px #F6ADCD; }
+
+.red-highlight {
+  text-shadow: 3px 0px 3px red, -3px 0px 3px red, 6px 0px 6px red, -6px 0px 6px red; }
+
+.yellow-highlight {
+  text-shadow: -3px 0px 3px yellow, 3px 0px 3px yellow, 6px 0px 6px yellow, -6px 0px 6px yellow; }
+
+.highlight-container, .highlight {
+  position: relative; }
+
+.highlight-container {
+  display: inline-block; }
+
+.highlight-container:before, .highlight-container:after {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute; }
+
+.highlight-container:before {
+  background: rgba(234, 221, 6, 0.9);
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px; }
+
+.highlight-container:after {
+  background: rgba(234, 210, 6, 0.6);
+  top: 3px;
+  right: -2px; }
+
+.highlight-container-pink:before {
+  background: rgba(246, 173, 205, 0.9);
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px; }
+
+.highlight-container-pink:after {
+  background: rgba(246, 173, 205, 0.6);
+  top: 3px;
+  right: -2px; }
+
+.highlight-container .highlight {
+  color: #333;
+  z-index: 4; }
 
 .sub-title {
   font-size: 25px;

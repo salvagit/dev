@@ -3,20 +3,16 @@ var Main = {
     init: function () {
         this.bindActions();
         var hash = window.location.href.split('#')[1];
-        if (hash) {
-            document.querySelector('.icon.'+hash).click();
-            var icon = document.querySelector('.icon.'+hash);
-            console.log(icon);
-        }
+        if (hash) Main.getSection(hash)
     },
 
     bindActions: function () {
         document.querySelectorAll('.icon').forEach(function(el) {
             el.addEventListener('click', function (e) {
                 e.preventDefault();
-                icon = this.className
-                .replace('icon', '')
-                .replace(' col-xs-2 col-sm-2 col-md-2', '');
+                icon = this.getAttribute("class")
+                    .replace('icon', '')
+                    .replace(' col-xs-2 col-sm-2 col-md-2', '');
 
                 Main.getSection(icon);
             });
@@ -24,8 +20,16 @@ var Main = {
     },
     
     getSection: function (icon) {
+
+        window.location.hash = icon.replace(' ','');
+
+        document.querySelectorAll('g.icon').forEach(function (el) { el.style.fill ='#B1B3B6'; });
+        document.querySelector('g.icon.' + icon.replace(' ', '')).style.fill ='#20407D';
+
         Main.getArrow(icon);
-        document.querySelector('.text').innerHTML = document.querySelector('#'+icon.replace(' ','') ).innerHTML;
+        var container = document.querySelector('.text');
+        container.innerHTML = document.querySelector('#'+icon.replace(' ','') ).innerHTML;
+        document.querySelector('#commentTitle').innerHTML = container.querySelector('input[name="commentTitle"]').value
     },
 
     getArrow: function (icon) {

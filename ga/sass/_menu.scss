@@ -7,7 +7,7 @@ a:hover {
     // z-index: -1;
     #flaps {
         .flap {
-            // width: 100%;
+            min-width: 158px;
             min-height: 70px;
             list-style-type: none;
             margin-bottom: 15px;

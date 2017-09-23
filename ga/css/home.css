@@ -2,6 +2,7 @@ a:hover {
   text-decoration: none !important; }
 
 .menu-container #flaps .flap {
+  min-width: 158px;
   min-height: 70px;
   list-style-type: none;
   margin-bottom: 15px;
