@@ -1,0 +1,136 @@
+a:hover {
+  text-decoration: none !important; }
+
+.menu-container #flaps .flap {
+  min-height: 70px;
+  list-style-type: none;
+  margin-bottom: 15px;
+  transition: all .5s;
+  transform: translateX(-100%);
+  background-position: right;
+  -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  padding-right: 5px; }
+  .menu-container #flaps .flap p {
+    opacity: 0; }
+  .menu-container #flaps .flap.ceo {
+    margin-top: 40px;
+    height: 100px;
+    background: url("../img/flaps/blue_msj_ceo.png"); }
+  .menu-container #flaps .flap.vision {
+    height: 90px;
+    background: url("../img/flaps/green_vision.png"); }
+  .menu-container #flaps .flap.values {
+    background: url("../img/flaps/orange_values.png"); }
+  .menu-container #flaps .flap.transparency {
+    height: 100px;
+    background: url("../img/flaps/violet_transparency.png"); }
+  .menu-container #flaps .flap.code {
+    background: url("../img/flaps/yellow_code.png");
+    transform: rotate("1"); }
+  .menu-container #flaps .flap:hover {
+    transform: translateX(-70%); }
+    .menu-container #flaps .flap:hover p {
+      opacity: 1; }
+
+@font-face {
+  font-family: 'SensationsandQualities';
+  src: url("../fonts/SensationsandQualities.eot");
+  src: url("../fonts/SensationsandQualities.eot") format("embedded-opentype"), url("../fonts/SensationsandQualities.woff2") format("woff2"), url("../fonts/SensationsandQualities.woff") format("woff"), url("../fonts/SensationsandQualities.ttf") format("truetype"), url("../fonts/SensationsandQualities.svg#SensationsandQualities") format("svg"); }
+.menu {
+  background-color: gray;
+  margin-top: -10px;
+  padding: 10px !important; }
+  .menu svg {
+    margin: 0 2px; }
+    .menu svg:hover path {
+      fill: blue; }
+
+.modal-dialog {
+  background: url("../img/popup-background.png") no-repeat center; }
+
+.title {
+  color: #304a83;
+  text-align: center; }
+
+.signature {
+  margin-top: 20px;
+  text-align: center; }
+  .signature p {
+    display: inline-block; }
+
+.sub-title {
+  font-size: 25px;
+  max-width: 580px;
+  margin: 25px auto;
+  margin-top: 50px;
+  color: #4c4d4f;
+  text-align: center; }
+
+.text {
+  margin-top: 20px; }
+
+header {
+  font-weight: bolder;
+  text-align: center; }
+  header .arrow, header .pipe {
+    color: #818285;
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5em; }
+
+.opa0 {
+  opacity: 0; }
+
+.text {
+  text-align: center; }
+
+.icons {
+  text-align: center;
+  margin-top: 20px; }
+  .icons div {
+    height: 200px; }
+  .icons img {
+    max-width: 100px;
+    margin: 10px auto; }
+
+.sub-title {
+  max-width: 100%;
+  margin-bottom: 0; }
+  .sub-title .icon-container {
+    width: 480px;
+    margin: 0 auto; }
+    .sub-title .icon-container .icon {
+      width: 80px;
+      height: 80px;
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%); }
+      .sub-title .icon-container .icon.globe {
+        background: url("../img/globe.png") no-repeat;
+        background-size: contain; }
+      .sub-title .icon-container .icon.lupa {
+        background: url("../img/lupa.png") no-repeat center; }
+      .sub-title .icon-container .icon.person {
+        background: url("../img/person.png") no-repeat center; }
+      .sub-title .icon-container .icon.book {
+        background: url("../img/book.png") no-repeat center; }
+      .sub-title .icon-container .icon.exclamation {
+        background: url("../img/exclamation.png") no-repeat center; }
+      .sub-title .icon-container .icon.heart {
+        background: url("../img/heart.png") no-repeat center; }
+      .sub-title .icon-container .icon:hover {
+        -webkit-filter: grayscale(0);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(0); }
+
+.arrows {
+  margin: 0 auto;
+  text-align: center; }
+
+/*# sourceMappingURL=codigo.css.map */

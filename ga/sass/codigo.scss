@@ -1,0 +1,47 @@
+@import 'global';
+
+.text {
+    text-align: center;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 20px;
+    div {height: 200px;}
+    img {
+        max-width: 100px;
+        margin: 10px auto;
+    }
+}
+
+.sub-title {
+    max-width: 100%;
+    margin-bottom: 0;
+    .icon-container {
+        width: 480px;
+        margin: 0 auto;
+        .icon {
+            width: 80px;
+            height: 80px;
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            &.globe { 
+                background: url('../img/globe.png') no-repeat; 
+                background-size: contain;
+            }
+            &.lupa { background: url('../img/lupa.png') no-repeat center; }
+            &.person { background: url('../img/person.png') no-repeat center; }
+            &.book { background: url('../img/book.png') no-repeat center; }
+            &.exclamation { background: url('../img/exclamation.png') no-repeat center; }
+            &.heart { background: url('../img/heart.png') no-repeat center; }
+            &:hover {
+                -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+.arrows {
+    margin:0 auto;
+    text-align: center;
+}
