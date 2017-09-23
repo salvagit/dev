@@ -1,6 +1,24 @@
 @import 'menu';
 @import 'fonts';
 
+.menu {
+    background-color: gray;
+    margin-top: -10px;
+    padding: 10px!important;
+    svg {
+        margin: 0 2px;
+        &:hover {
+            path {
+                fill: blue;
+            }
+        }
+    } 
+}
+
+.modal-dialog {
+    background: url('../img/popup-background.png') no-repeat center;
+}
+
 .title {
     color: #304a83;
     text-align: center;
@@ -15,11 +33,14 @@
 }
 
 .sub-title {
-    color: #4c4d4f;
+    font-size: 25px;
+    max-width: 580px;
+    margin: 25px auto;
     margin-top: 50px;
+    color: #4c4d4f;
     text-align: center;
     h3 {
-        font-size: 2em;
+        // font-size: 2em;
     }
 }
 
@@ -40,3 +61,4 @@ header {
     .right {}
 }
 
+.opa0{opacity: 0;}

@@ -42,6 +42,18 @@ a:hover {
   font-family: 'SensationsandQualities';
   src: url("../fonts/SensationsandQualities.eot");
   src: url("../fonts/SensationsandQualities.eot") format("embedded-opentype"), url("../fonts/SensationsandQualities.woff2") format("woff2"), url("../fonts/SensationsandQualities.woff") format("woff"), url("../fonts/SensationsandQualities.ttf") format("truetype"), url("../fonts/SensationsandQualities.svg#SensationsandQualities") format("svg"); }
+.menu {
+  background-color: gray;
+  margin-top: -10px;
+  padding: 10px !important; }
+  .menu svg {
+    margin: 0 2px; }
+    .menu svg:hover path {
+      fill: blue; }
+
+.modal-dialog {
+  background: url("../img/popup-background.png") no-repeat center; }
+
 .title {
   color: #304a83;
   text-align: center; }
@@ -53,11 +65,12 @@ a:hover {
     display: inline-block; }
 
 .sub-title {
-  color: #4c4d4f;
+  font-size: 25px;
+  max-width: 580px;
+  margin: 25px auto;
   margin-top: 50px;
+  color: #4c4d4f;
   text-align: center; }
-  .sub-title h3 {
-    font-size: 2em; }
 
 .text {
   margin-top: 20px; }
@@ -70,6 +83,9 @@ header {
     margin: 0;
     display: inline-block;
     font-size: 1.5em; }
+
+.opa0 {
+  opacity: 0; }
 
 body {
   background: url("../img/resaltador.png") bottom no-repeat;
