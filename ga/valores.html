@@ -68,12 +68,12 @@
                         </a>
                         <a href="./transparencia.html">
                             <li class="flap transparency">
-                                <p>Transparencia</p>
+                                <p>Compromiso con la ética y la transparencia</p>
                             </li>
                         </a>
                         <a href="./codigo.html">
                             <li class="flap code">
-                                <p>Codigo</p>
+                                <p>Cumplimiento del código</p>
                             </li>
                         </a>
                     </ul>
@@ -230,6 +230,7 @@ width="170.05px" height="170.05px" viewBox="0 0 170.05 170.05" enable-background
             <div class="postix"></div>
         </footer>  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">     <div class="modal-dialog" role="document" style="width:398px;">         <div class="modal-content" style="background: url('../img/popup-background.png') no-repeat center;">              <div class="modal-body" style="padding:0">                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-right:10px;"><span aria-hidden="true">&times;</span></button>                 <h3 style="margin-left:10px">Lineamientos internacionales</h3>                 <p style="margin:0 0 0 10px;">Para desarrollar nuestro Código de Ética consideramos las principales regulaciones vinculadas al tema, incluyendo la Ley                 Sarbanes Oxley, y los lineamientos de diversos estándares internacionales que abordan la ética y transparencia:</p>                 <ul style="margin:0 12px 20px">                     <li style="font-size:12px">Pacto Global de Naciones Unidas</li>                     <li style="font-size:12px">Iniciativa de Reporte Global (GRI)</li>                     <li style="font-size:12px">Norma ISO 26000</li>                     <li style="font-size:12px">Líneas Directrices de la OCDE para Empresas Multinacionales</li>                 </ul>             </div>         </div>         <!-- /.modal-content -->     </div>     <!-- /.modal-dialog --> </div> <!-- /.modal -->
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -252,7 +253,7 @@ width="170.05px" height="170.05px" viewBox="0 0 170.05 170.05" enable-background
                     document.querySelector(arrowSelector).style.opacity = '1';
                 }
                 document.querySelectorAll('.letter').forEach(function(el) {
-                    el.addEventListener('click', function(e) {
+                    el.addEventListener('mouseover', function(e) {
                         e.preventDefault();
                         var letter = this.dataset.letter;
 

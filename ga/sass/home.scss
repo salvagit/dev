@@ -1,4 +1,4 @@
-@import 'menu';
+@import 'global';
 
 body {
     background-color: #e8e9e9!important;
@@ -32,12 +32,28 @@ body {
     border-right: 4px solid gray;
 
     h1 {
-        padding-top: 40vh;
+        padding-top: 30vh;
+        font-weight: 300;
+        color: #0c4da2;
+        font-size: 4em;
     }
     .logo {
         margin: 0 auto;
         width: 250px;
         height: 55px;
         background: url('../img/spirit_logo.png') no-repeat;
+    }
+    &:after {
+    content:"";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        border-left: 6px solid gray;
+        transform: translate(-50%);
+        -webkit-box-shadow: 5px 0px 50px 5px rgba(0, 0, 0, 0.71);
+        -moz-box-shadow: 5px 0px 50px 5px rgba(0, 0, 0, 0.71);
+        box-shadow: 5px 0px 50px 5px rgba(0, 0, 0, 0.71);
     }
 }

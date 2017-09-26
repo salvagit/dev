@@ -26,7 +26,14 @@ a:hover {
             color: white;
             padding-right: 5px;
 
-            p {opacity: 0;}
+            background-position-x: 99%!important;
+
+            text-align: right;
+
+            p {
+                opacity: 0;
+                width: 80%;
+            }
 
             &.ceo {
                 margin-top: 40px;

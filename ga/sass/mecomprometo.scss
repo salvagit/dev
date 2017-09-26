@@ -7,6 +7,11 @@
 .sub-title {
     p{padding:0;}
     font-size: 1.2em;
+    ul.tildes {
+        list-style-image: url('/img/tilde.svg');
+        list-style-position: inside;
+    }
+    text-align: left;
 }
 
 .text {

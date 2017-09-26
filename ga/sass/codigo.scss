@@ -12,6 +12,7 @@
         max-width: 100px;
         margin: 10px auto;
     }
+
 }
 
 .sub-title {
@@ -24,7 +25,7 @@
             pointer-events: bounding-box;
             cursor: pointer;
             &:hover {
-                fill: #20407D;
+                fill: #20407D!important;
             }
         }
     }
