@@ -1,0 +1,44 @@
+{
+    "s": {
+        "title": "SUSTAINABLE GROWTH",
+        "color": "#389945",
+        "arrowSelector": ".green",
+        "sub-title": "ss",
+        "text": "Tener la mirada de largo plazo como guía a nuestra forma de actuar en el presente siendo conscientes del impacto de nuestras acciones sobre todo nuestro entorno. Comprometernos con ese futuro con mentalidad y actitud positiva, con la convicción que trae avance y crecimiento y asumiendo la responsabilidad de construir en el presente para lograrlo."
+    },
+    "p": {
+        "title": "PROFESSIONAL EXCELLENCE",
+        "color": "#265E9D",
+        "arrowSelector": ".blue",
+        "sub-title": "pp",
+        "text": "Buscar los más altos estándares de calidad en nuestro accionar generando valor agregado a partir de una actitud proactiva de ampliar permanentemente nuestros conocimientos. Es aprender del entorno logrando la convergencia de conocimientos como motor de transformación, experimentando y liderando la búsqueda de la excelencia con compromiso y de manera profesional, traduciéndolo en soluciones que aporten valor concreto a nuestros clientes. "
+    },
+    "i": {
+        "title": "INTEGRITY & COMMITMENT",
+        "color": "#F28340",
+        "arrowSelector": ".orange",
+        "sub-title": "ii",
+        "text": "Ser integro es ser transparente, sincero, auténtico, y coherente entre lo que hacemos, sentimos y decimos. Es opinar, disentir, construir consenso. Ser integro es SER, no parecer. Ser comprometido es entregarse, siendo generoso en esa entrega para ponernos al servicio de lo que estamos haciendo de manera responsable. Haciendo, proponiendo y empujando a los demás a unirse en ese esfuerzo. Es tener predisposición y tomar protagonismo. Para conjugar la integridad y el compromiso es fundamental alinear nuestros objetivos personales con los de la compañía y ser parte de esa construcción sinérgica."
+    },
+    "r": {
+        "title": "RESPONSIBLE",
+        "color": "#147866",
+        "arrowSelector": ".greengreen",
+        "sub-title": "rr",
+        "text": "La actitud individual más trascendente es asumir Accountability. Ser dueños de lo que hacemos, de lo que proponemos, trascendiendo las estructuras jerárquicas para romper los silos e ir más allá de mi área pensando en la compañía como un todo. Es tomar protagonismo y saber delegar, es saber armar equipo sin desentenderme viéndonos como una pieza clave para el éxito de todos. Es lograr el equilibrio y la apertura adoptando una actitud proactiva donde la propuesta reemplaza la queja y el accionar individual dentro de un equipo empoderado logra las metas propuestas.   "
+    },
+    "ii": {
+        "title": "INNOVATIVE",
+        "color": "#724478",
+        "arrowSelector": ".violet",
+        "sub-title": "ii",
+        "text": "Consideramos la innovación como el proceso de convergencia en el cual se crean cosas nuevas a partir de elementos existentes. Por eso fomentamos, como valor esencial para la sustentabilidad de nuestro negocio y como característica diferencial de nuestros colaboradores, la innovación como la búsqueda permanente de valor agregado de aspectos para mejorar que sean realizables. La tecnología es nuestra herramienta para hacer uso de la convergencia de conocimientos, para generar innovaciones que se traduzcan en nuevas soluciones de impacto positivo teniendo a en cuenta a todo nuestro entorno: nuestros colaboradores, clientes y socios de negocio, la comunidad, y el medioambiente. "
+    },
+    "t": {
+        "title": "TEAM SPIRITED",
+        "color": "#F6BA21",
+        "arrowSelector": ".yellow",
+        "sub-title": "tt",
+        "text": "La clave del valor diferencial de gA está en sus equipos. El compromiso de cada colaborador con el equipo y del equipo con cada uno de ellos es la base de nuestros logros, es lo que propicia que las cosas sucedan. En nuestro negocio y en la sociedad en la que vivimos no alcanza con una visión unidimensional, el valor agregado y las soluciones se encuentran en la convergencia de saberes multidisciplinarios. gA juega un deporte de equipo, donde más que el jugador habilidoso triunfa el mejor trabajo colectivo. Por eso trabajamos en equipo para potenciar la riqueza de nuestros aportes individuales y lograr conjugarlos en nuevas visiones multidisciplinarias superadoras que aportan una visión integral de cada tema. "
+    }
+}

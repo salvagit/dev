@@ -1,0 +1,108 @@
+@import 'menu';
+@import 'fonts';
+
+.menu {
+    background-color: gray;
+    margin-top: -10px;
+    padding: 10px!important;
+    svg {
+        margin: 0 2px;
+        &:hover {
+            path {
+                fill: blue;
+            }
+        }
+    } 
+}
+
+.modal-dialog {
+    background: url('../img/popup-background.png') no-repeat center;
+}
+
+.title {
+    color: #304a83;
+    text-align: center;
+}
+
+.signature {
+    margin-top: 20px;
+    text-align: center;
+    p {
+        display: inline-block;
+    }
+}
+
+.sub-title {
+    font-size: 25px;
+    max-width: 580px;
+    margin: 25px auto;
+    margin-top: 50px;
+    color: #4c4d4f;
+    text-align: center;
+    h3 {
+        // font-size: 2em;
+    }
+}
+
+.text {
+    margin-top: 20px;
+}
+
+header {
+    font-weight: bolder;
+    text-align: center;
+    .arrow, .pipe {
+        color: #818285;
+        margin: 0;
+        display: inline-block;
+        font-size: 1.5em;
+    }
+    .left {}
+    .right {}
+}
+
+.opa0{opacity: 0;}
+
+.highlight-container, .highlight {
+  position: relative;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+
+.highlight-container:before, .highlight-container:after {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -1px;
+  margin-right: -1px;
+  position: absolute;
+}
+.highlight-container:before {
+  background: rgba(234, 221, 6, 0.5);
+  transform: rotate(2deg);
+  top: -.7px;
+  left: -1px;
+}
+.highlight-container:after {
+  background: rgba(234, 210, 6, 0.2);
+  top: 1.7px;
+  right: -2px;
+}
+.highlight-container-pink:before {
+  background: rgba(246, 173, 205, .5);
+  transform: rotate(2deg);
+  top: -.7px;
+  left: -1px;
+}
+.highlight-container-pink:after {
+  background: rgba(246, 173, 205, .2);
+  top: 2px;
+  right: -2px;
+}
+.highlight-container .highlight {
+  color: #333;
+  z-index: 4;
+}

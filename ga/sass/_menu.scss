@@ -1,0 +1,65 @@
+
+a:hover {
+    text-decoration: none!important;
+}
+
+.menu-container{
+    // z-index: -1;
+    #flaps {
+        .flap {
+            min-width: 158px;
+            min-height: 70px;
+            list-style-type: none;
+            margin-bottom: 15px;
+            transition: all .5s;
+            transform: translateX( -100% );
+            background-position: right;
+            
+            -webkit-box-shadow: 10px 10px 26px -2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 26px -2px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 26px -2px rgba(0,0,0,0.75);
+            
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+            color: white;
+            padding-right: 5px;
+
+            background-position-x: 99%!important;
+
+            text-align: right;
+
+            p {
+                opacity: 0;
+                width: 80%;
+            }
+
+            &.ceo {
+                margin-top: 40px;
+                height: 100px;
+                background: url('../img/flaps/blue_msj_ceo.png');
+            }
+            &.vision {
+                height: 90px;
+                background: url('../img/flaps/green_vision.png');
+            }
+            &.values {
+                background: url('../img/flaps/orange_values.png');
+            }
+            &.transparency {
+                height: 100px;
+                background: url('../img/flaps/violet_transparency.png');
+            }
+            &.code {
+                background: url('../img/flaps/yellow_code.png');
+                transform: rotate('1');
+            }
+            
+            &:hover {
+                transform: translateX( -70% );
+                p {opacity: 1;}
+            }
+        }
+    }
+}

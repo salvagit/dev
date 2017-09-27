@@ -1,0 +1,184 @@
+a:hover {
+  text-decoration: none !important; }
+
+.menu-container #flaps .flap {
+  min-width: 158px;
+  min-height: 70px;
+  list-style-type: none;
+  margin-bottom: 15px;
+  transition: all .5s;
+  transform: translateX(-100%);
+  background-position: right;
+  -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  padding-right: 5px;
+  background-position-x: 99% !important;
+  text-align: right; }
+  .menu-container #flaps .flap p {
+    opacity: 0;
+    width: 80%; }
+  .menu-container #flaps .flap.ceo {
+    margin-top: 40px;
+    height: 100px;
+    background: url("../img/flaps/blue_msj_ceo.png"); }
+  .menu-container #flaps .flap.vision {
+    height: 90px;
+    background: url("../img/flaps/green_vision.png"); }
+  .menu-container #flaps .flap.values {
+    background: url("../img/flaps/orange_values.png"); }
+  .menu-container #flaps .flap.transparency {
+    height: 100px;
+    background: url("../img/flaps/violet_transparency.png"); }
+  .menu-container #flaps .flap.code {
+    background: url("../img/flaps/yellow_code.png");
+    transform: rotate("1"); }
+  .menu-container #flaps .flap:hover {
+    transform: translateX(-70%); }
+    .menu-container #flaps .flap:hover p {
+      opacity: 1; }
+
+@font-face {
+  font-family: 'SensationsandQualities';
+  src: url("../fonts/SensationsandQualities.eot");
+  src: url("../fonts/SensationsandQualities.eot") format("embedded-opentype"), url("../fonts/SensationsandQualities.woff2") format("woff2"), url("../fonts/SensationsandQualities.woff") format("woff"), url("../fonts/SensationsandQualities.ttf") format("truetype"), url("../fonts/SensationsandQualities.svg#SensationsandQualities") format("svg"); }
+.menu {
+  background-color: gray;
+  margin-top: -10px;
+  padding: 10px !important; }
+  .menu svg {
+    margin: 0 2px; }
+    .menu svg:hover path {
+      fill: blue; }
+
+.modal-dialog {
+  background: url("../img/popup-background.png") no-repeat center; }
+
+.title {
+  color: #304a83;
+  text-align: center; }
+
+.signature {
+  margin-top: 20px;
+  text-align: center; }
+  .signature p {
+    display: inline-block; }
+
+.sub-title {
+  font-size: 25px;
+  max-width: 580px;
+  margin: 25px auto;
+  margin-top: 50px;
+  color: #4c4d4f;
+  text-align: center; }
+
+.text {
+  margin-top: 20px; }
+
+header {
+  font-weight: bolder;
+  text-align: center; }
+  header .arrow, header .pipe {
+    color: #818285;
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5em; }
+
+.opa0 {
+  opacity: 0; }
+
+.highlight-container, .highlight {
+  position: relative; }
+
+.highlight-container {
+  display: inline-block; }
+
+.highlight-container:before, .highlight-container:after {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -1px;
+  margin-right: -1px;
+  position: absolute; }
+
+.highlight-container:before {
+  background: rgba(234, 221, 6, 0.5);
+  transform: rotate(2deg);
+  top: -.7px;
+  left: -1px; }
+
+.highlight-container:after {
+  background: rgba(234, 210, 6, 0.2);
+  top: 1.7px;
+  right: -2px; }
+
+.highlight-container-pink:before {
+  background: rgba(246, 173, 205, 0.5);
+  transform: rotate(2deg);
+  top: -.7px;
+  left: -1px; }
+
+.highlight-container-pink:after {
+  background: rgba(246, 173, 205, 0.2);
+  top: 2px;
+  right: -2px; }
+
+.highlight-container .highlight {
+  color: #333;
+  z-index: 4; }
+
+body {
+  background-color: #e8e9e9 !important;
+  background-image: url("../img/globe.png"), url("../img/persons.png"), url("../img/cloud.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom left, bottom right; }
+
+#container {
+  width: 1000px;
+  margin: 0 auto; }
+
+.header {
+  background: url("../img/head.png") center no-repeat;
+  height: 100px; }
+
+.book {
+  position: relative;
+  height: calc(100vh - 100px);
+  margin: 0;
+  border: .4px solid gray;
+  background-color: white;
+  z-index: 9999;
+  text-align: center;
+  -webkit-box-shadow: 32px 11px 68px 3px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 32px 11px 68px 3px rgba(0, 0, 0, 0.71);
+  box-shadow: 32px 11px 68px 3px rgba(0, 0, 0, 0.71);
+  border-right: 4px solid gray; }
+  .book h1 {
+    padding-top: 30vh;
+    font-weight: 300;
+    color: #0c4da2;
+    font-size: 4em; }
+  .book .logo {
+    margin: 0 auto;
+    width: 250px;
+    height: 55px;
+    background: url("../img/spirit_logo.png") no-repeat; }
+  .book:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    border-left: 6px solid gray;
+    transform: translate(-50%);
+    -webkit-box-shadow: 5px 0px 50px 5px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 5px 0px 50px 5px rgba(0, 0, 0, 0.71);
+    box-shadow: 5px 0px 50px 5px rgba(0, 0, 0, 0.71); }
+
+/*# sourceMappingURL=home.css.map */
